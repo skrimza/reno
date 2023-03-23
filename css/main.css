@@ -37,6 +37,18 @@ ol, ul, li {
   margin: 0 auto;
 }
 
+h2.section-title {
+  color: #274BF1;
+  font-size: 40px;
+  text-align: center;
+}
+
+p.section-description {
+  color: #202939;
+  font-size: 18px;
+  text-align: center;
+}
+
 .header {
   background: url("../images/bg.jpg") no-repeat right bottom/cover;
 }
@@ -72,7 +84,7 @@ ol, ul, li {
   color: #202939;
 }
 .menu__button {
-  display: block;
+  display: inline-block;
   border: 1px solid #202939;
   padding: 15px 21.5px;
   border-radius: 100px;
@@ -105,4 +117,160 @@ ol, ul, li {
 .content__description {
   font-size: 23px;
   margin-bottom: 56px;
+}
+.content__btn {
+  display: inline-block;
+  border: 1px solid #202939;
+  padding: 20px 30px;
+  border-radius: 100px;
+  color: #202939;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.content__btn:hover {
+  background: #274BF1;
+  color: #FFFFFF;
+  border: 1px solid #274BF1;
+}
+
+.first {
+  padding-top: 117px;
+  padding-bottom: 84px;
+}
+.first-title {
+  margin-bottom: 15px;
+}
+.first-description {
+  max-width: 370px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.swiper {
+  width: 100%;
+}
+.swiper__grid {
+  display: grid;
+  grid-template: repeat(2, auto)/repeat(3, auto);
+  grid-gap: 25px;
+}
+
+.slider {
+  background: #F5F6F8;
+  padding: 20px;
+  max-width: 412px;
+  border-radius: 20px;
+}
+.slider__block {
+  width: 372px;
+  height: 187px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  position: relative;
+}
+.slider__block_image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider-content {
+  padding-left: 64px;
+}
+.slider-content__text_title {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.slider-content__text_description {
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.content-one {
+  background: url("../images/ficon6.svg") no-repeat left center/53px;
+}
+
+.content-two {
+  background: url("../images/ficon3.svg") no-repeat left center/53px;
+}
+
+.content-three {
+  background: url("../images/ficon5.svg") no-repeat left center/53px;
+}
+
+.content-four {
+  background: url("../images/ficon1.svg") no-repeat left center/53px;
+}
+
+.content-five {
+  background: url("../images/ficon4.svg") no-repeat left center/53px;
+}
+
+.content-six {
+  background: url("../images/ficon2.svg") no-repeat left center/53px;
+}
+
+.second {
+  padding-top: 80px;
+  padding-bottom: 83px;
+}
+.second-title {
+  margin-bottom: 10px;
+}
+.second-description {
+  margin-bottom: 60px;
+}
+
+.just {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.just-block {
+  background: #F5F6F8;
+  max-width: 872px;
+  margin-bottom: 35px;
+  padding: 40px 30px;
+  border-radius: 20px;
+}
+.just-block:last-of-type, .just-block:first-of-type {
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+.just-block:last-of-type {
+  margin-bottom: 0;
+}
+.just-block__title {
+  font-size: 32px;
+}
+.just-block__description {
+  font-size: 25px;
+}
+.just-block__content {
+  padding-left: 105px;
+}
+
+.just-content_one {
+  background: url("../images/sicon1.png") no-repeat left center/90px;
+}
+
+.just-content_two {
+  background: url("../images/sicon2.png") no-repeat left center/90px;
+}
+
+.just-content_three {
+  background: url("../images/sicon3.png") no-repeat left center/90px;
+}
+
+.third {
+  padding-top: 80px;
 }/*# sourceMappingURL=main.css.map */
