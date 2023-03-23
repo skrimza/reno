@@ -34,6 +34,7 @@ ol, ul, li {
 
 .container {
   max-width: 1284px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -41,6 +42,7 @@ h2.section-title {
   color: #274BF1;
   font-size: 40px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 p.section-description {
@@ -273,4 +275,205 @@ p.section-description {
 
 .third {
   padding-top: 80px;
+  position: relative;
+  padding-bottom: 84px;
+}
+
+.argument-container {
+  margin-right: 0;
+}
+.argument-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.argument__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+  top: 5%;
+}
+.argument__block {
+  background: #274BF1;
+  padding-top: 20px;
+  padding-bottom: 72px;
+  border-radius: 0 20px 20px 0;
+  width: 84%;
+  margin-bottom: 50px;
+}
+.argument__block:last-of-type {
+  margin-bottom: 0;
+}
+.argument__block:nth-child(2n) {
+  -webkit-transform: translateX(20%);
+      -ms-transform: translateX(20%);
+          transform: translateX(20%);
+  background: #F5F6F8;
+  border-radius: 20px 0 0 20px;
+}
+.argument__block:nth-child(2n) .argument-container {
+  margin-left: 0;
+}
+.argument__block:nth-child(2n) .argument-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.argument__block:nth-child(2n) .argument__bg {
+  width: 380px;
+  height: 380px;
+  background: url("../images/bl-pattern.svg") no-repeat center center;
+}
+.argument__block:nth-child(2n) .argument__content {
+  margin-right: 100px;
+  color: #202939;
+}
+.argument__block:nth-child(2n) .argument__content ul.argument__list {
+  list-style-image: url("../images/black-mark.svg");
+}
+.argument__content {
+  margin-left: 100px;
+  color: #ffffff;
+}
+.argument__content ul.argument__list {
+  list-style-image: url("../images/white-mark.svg");
+  padding-left: 40px;
+}
+.argument__content ul.argument__list li {
+  font-size: 25px;
+}
+.argument__content_title {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+.argument__bg {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  background: url("../images/pattern.svg") no-repeat center center;
+}
+
+.fourth {
+  padding-top: 80px;
+  padding-bottom: 84px;
+}
+.fourth-title {
+  max-width: 600px;
+  margin: 0 auto 80px;
+}
+
+.details-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 322px;
+}
+
+.quality-block {
+  background: #F5F6F8;
+  border-radius: 20px;
+  padding: 45px 15px;
+  max-width: 245px;
+  -ms-flex-item-align: start;
+      align-self: start;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.quality-block:nth-child(2n+1) {
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+.quality-block__icon {
+  height: 75px;
+  margin-bottom: 20px;
+}
+.quality-block__title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.quality-block__description {
+  font-size: 14px;
+  text-align: center;
+}
+
+.quality-icon_one {
+  background: url("../images/ticon1.svg") no-repeat center center;
+}
+
+.quality-icon_two {
+  background: url("../images/ticon2.svg") no-repeat center center;
+}
+
+.quality-icon_three {
+  background: url("../images/ticon3.svg") no-repeat center center;
+}
+
+.quality-icon_four {
+  background: url("../images/ticon4.svg") no-repeat center center;
+}
+
+.quality-icon_five {
+  background: url("../images/ticon5.svg") no-repeat center center;
+}
+
+.quality-block:hover .quality-icon_one {
+  background: url("../images/tsicon1.svg") no-repeat center center;
+}
+
+.quality-block:hover .quality-icon_two {
+  background: url("../images/tsicon2.svg") no-repeat center center;
+}
+
+.quality-block:hover .quality-icon_three {
+  background: url("../images/tsicon3.svg") no-repeat center center;
+}
+
+.quality-block:hover .quality-icon_four {
+  background: url("../images/tsicon4.svg") no-repeat center center;
+}
+
+.quality-block:hover .quality-icon_five {
+  background: url("../images/tsicon5.svg") no-repeat center center;
+}
+
+.fifth {
+  padding-top: 80px;
+  padding-bottom: 164px;
+}
+
+h2.fifth-title {
+  text-align: left;
+  max-width: 500px;
+  margin-bottom: 65px;
+}
+
+.question-block__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 26px 0;
+  border-bottom: 1px solid #E8E8E8;
+}
+.question-block__text {
+  max-width: 943px;
+  font-size: 25px;
 }/*# sourceMappingURL=main.css.map */
