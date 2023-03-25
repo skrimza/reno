@@ -7,6 +7,7 @@
     <title>Reno</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.css">
 </head>
 <body>
     <header class="header" id="header">
@@ -34,12 +35,19 @@
                         Get started
                     </a>
                 </div>
+                <div class="mobile">
+                    <button class="mobile-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="content">
             <div class="container">
                 <div class="row">
-                    <div class="content__logo"></div>
+                    <a class="content__logo"></a>
                     <h1 class="content__title">Renovate your home hassle-free</h1>
                     <p class="content__description">
                         Start your home renovation journey the smart way
@@ -59,9 +67,9 @@
             <p class="section-description first-description">
                 Whether it is a quick or full home renovation, we are here for you
             </p>
-            <div class="swiper">
+            <div class="swiper newSwiper">
                 <!-- Additional required wrapper -->
-                <div class="swiper-wrapper swiper__grid">
+                <div class="swiper-wrapper mySwiperWrap">
                     <!-- Slides -->
                     <div class="swiper-slide slider">
                         <div class="slider__block">
@@ -131,6 +139,76 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper__grid">
+                    <!-- Slides -->
+                    <div class="slider">
+                        <div class="slider__block">
+                            <img src="images/present1.jpg" alt="present-image" class="slider__block_image">
+                        </div>
+                        <div class="slider-content content-one">
+                            <div class="slider-content__text">
+                                <h3 class="slider-content__text_title">Interior design</h3>
+                                <p class="slider-content__text_description">Imagine your home with the best interior designers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider__block">
+                            <img src="images/present2.jpg" alt="present-image" class="slider__block_image">
+                        </div>
+                        <div class="slider-content content-two">
+                            <div class="slider-content__text">
+                                <h3 class="slider-content__text_title">Renovation & Improvement</h3>
+                                <p class="slider-content__text_description">Renovate your home from start to the finished</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider__block">
+                            <img src="images/present3.jpg" alt="present-image" class="slider__block_image">
+                        </div>
+                        <div class="slider-content content-three">
+                            <div class="slider-content__text">
+                                <h3 class="slider-content__text_title">Landscaping</h3>
+                                <p class="slider-content__text_description">Remodel your outdoor spaces at the highest standard...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider__block">
+                            <img src="images/present4.jpg" alt="present-image" class="slider__block_image">
+                        </div>
+                        <div class="slider-content content-four">
+                            <div class="slider-content__text">
+                                <h3 class="slider-content__text_title">Kitchen renovation</h3>
+                                <p class="slider-content__text_description">Build your kitchen from scratch or revamp your existing kitchen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider__block">
+                            <img src="images/present5.jpg" alt="present-image" class="slider__block_image">
+                        </div>
+                        <div class="slider-content content-five">
+                            <div class="slider-content__text">
+                                <h3 class="slider-content__text_title">Bathroom renovation</h3>
+                                <p class="slider-content__text_description">Upgrade and renew your 
+                                bathroom </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider__block">
+                            <img src="images/present6.jpg" alt="present-image" class="slider__block_image">
+                        </div>
+                        <div class="slider-content content-six">
+                            <div class="slider-content__text">
+                                <h3 class="slider-content__text_title">Furniture and fitouts</h3>
+                                <p class="slider-content__text_description">Customize your furniture with tailor made furniture</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
     </section>
     <section class="second">
@@ -142,19 +220,19 @@
                 We guarantee quality, cost, and move in date
             </p>
             <div class="just">
-                <div class="just-block">
+                <div class="just-block anim-items anim-no-hide">
                     <div class="just-block__content just-content_one">
                         <h3 class="just-block__title">Best Quality</h3>
                         <p class="just-block__description">Select the best contractor, request inspections after each milestone, & hold payments until delivery completion.</p>
                     </div>
                 </div>
-                <div class="just-block">
+                <div class="just-block anim-items anim-no-hide">
                     <div class="just-block__content just-content_two">
                         <h3 class="just-block__title">Cost Saving</h3>
                         <p class="just-block__description">Get the best proposal from our vetted contractors,  manage ongoing costs and approve all changes.</p>
                     </div>
                 </div>
-                <div class="just-block">
+                <div class="just-block anim-items anim-no-hide">
                     <div class="just-block__content just-content_three">
                         <h3 class="just-block__title">Move in Date</h3>
                         <p class="just-block__description">Know your move-in day from day one and we will incentivize the contractors for on-time delivery.</p>
@@ -165,7 +243,7 @@
     </section>
     <section class="third">
         <div class="argument">
-            <div class="argument__block">
+            <div class="argument__block anim-items anim-no-hide">
                 <div class="container argument-container">
                     <div class="argument-row">
                         <div class="argument__bg">
@@ -183,7 +261,7 @@
                     </div>
                 </div>
             </div>
-            <div class="argument__block">
+            <div class="argument__block anim-items anim-no-hide">
                 <div class="container argument-container">
                     <div class="argument-row">
                         <div class="argument__bg">
@@ -201,7 +279,7 @@
                     </div>
                 </div>
             </div>
-            <div class="argument__block">
+            <div class="argument__block anim-items anim-no-hide">
                 <div class="container argument-container">
                     <div class="argument-row">
                         <div class="argument__bg">
@@ -219,7 +297,7 @@
                     </div>
                 </div>
             </div>
-            <div class="argument__block">
+            <div class="argument__block anim-items anim-no-hide">
                 <div class="container argument-container">
                     <div class="argument-row">
                         <div class="argument__bg">
@@ -241,53 +319,226 @@
     <section class="fourth">
         <div class="container">
             <h2 class="section-title fourth-title">How we guarantee the best quality for you?</h2>
-            <div class="details-row">
-                <div class="quality-block">
-                    <div class="quality-block__icon quality-icon_one"></div>
-                    <h3 class="quality-block__title">
-                        Withhold payment
-                    </h3>
-                    <p class="quality-block__description">
-                        Payments are secured in your account until work is delivered as per the agreed upon specs
-                    </p>
+            <!-- Slider main container -->
+            <div class="swiper secSwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper quality-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide quality-block">
+                        <div class="quality-block__icon quality-icon_one">
+                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_2574)">
+                                    <path d="M37.5 75C58.2107 75 75 58.2107 75 37.5C75 16.7893 58.2107 0 37.5 0C16.7893 0 0 16.7893 0 37.5C0 58.2107 16.7893 75 37.5 75Z" fill="#202939"/>
+                                    <path d="M42.1578 41C47.9365 41 52.6371 36.2899 52.6371 30.5C52.6371 24.7099 47.9365 20 42.1578 20C36.3791 20 31.6785 24.7099 31.6785 30.5C31.6785 36.2901 36.3791 41 42.1578 41ZM38.7762 32.5018C39.3084 32.1339 40.0315 32.2615 40.3977 32.7923C41.0458 33.7243 41.8191 34.1663 42.5081 33.9465C42.9948 33.7938 43.3223 33.346 43.3223 32.8333C43.3223 32.1896 42.7992 31.6667 42.1578 31.6667C40.2316 31.6667 38.6648 30.0966 38.6648 28.1667C38.6648 26.674 39.6006 25.382 40.9935 24.8864V23.5C40.9935 22.8552 41.5143 22.3333 42.1578 22.3333C42.8013 22.3333 43.3223 22.8552 43.3223 23.5V24.8929C44.2471 25.206 45.1197 25.8542 45.8284 26.8757C46.1968 27.4044 46.0672 28.1323 45.5372 28.5004C45.012 28.8672 44.2842 28.7396 43.918 28.2087C43.2676 27.2745 42.4899 26.8427 41.8076 27.0535C41.3208 27.2062 40.9934 27.6539 40.9934 28.1665C40.9934 28.8103 41.5164 29.3332 42.1577 29.3332C44.0839 29.3332 45.6507 30.9032 45.6507 32.8332C45.6507 34.3259 44.7149 35.6179 43.322 36.1146V37.5C43.322 38.1448 42.8012 38.6667 42.1576 38.6667C41.5139 38.6667 40.9932 38.1449 40.9932 37.5V36.1296C40.0678 35.8174 39.1958 35.1466 38.4871 34.1252C38.1189 33.5966 38.2486 32.8698 38.7762 32.5018ZM17.7061 44.5V53.8333C17.7061 54.4781 18.2269 55 18.8705 55H24.6923V43.3333H18.8705C18.2269 43.3333 17.7061 43.8551 17.7061 44.5ZM56.8376 42.1735C56.827 42.1654 56.8163 42.1572 56.8056 42.1492C55.2015 40.9414 52.8803 41.4529 51.6762 43.0613L47.2801 48.9339C46.6206 49.8148 45.5857 50.3332 44.4866 50.3332H35.5673C34.9237 50.3332 34.403 49.8115 34.403 49.1665C34.403 48.5216 34.9238 47.9999 35.5673 47.9999H44.4866C45.7728 47.9999 46.8153 46.9551 46.8153 45.6665C46.8153 44.3778 45.7728 43.3332 44.4866 43.3332H37.9802C36.8931 42.2646 35.4014 40.9999 32.843 40.9999C31.4034 40.9999 30.0958 41.6561 28.8291 42.2895C28.2004 42.6051 27.5962 42.896 27.0212 43.0938V55H45.613C47.4521 55 49.1859 54.1405 50.3018 52.6758L57.056 43.8096C57.4527 43.2859 57.3359 42.5526 56.8376 42.1735Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_2574">
+                                        <rect width="75" height="75" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="quality-block__title">
+                            Withhold payment
+                        </h3>
+                        <p class="quality-block__description">
+                            Payments are secured in your account until work is delivered as per the agreed upon specs
+                        </p>
+                    </div>
+                    <div class="swiper-slide quality-block">
+                        <div class="quality-block__icon quality-icon_two">
+                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_2575)">
+                                    <path d="M37.5 75C58.2107 75 75 58.2107 75 37.5C75 16.7893 58.2107 0 37.5 0C16.7893 0 0 16.7893 0 37.5C0 58.2107 16.7893 75 37.5 75Z" fill="#202939"/>
+                                    <path d="M42.7044 17.5853C42.7044 14.7151 40.3704 12.3809 37.5 12.3809C34.6296 12.3809 32.2956 14.7151 32.2956 17.5853C32.2956 20.4557 34.6296 22.7899 37.5 22.7899C40.3704 22.7899 42.7044 20.4557 42.7044 17.5853ZM37.5 22.7899C33.913 22.7899 30.9943 25.7086 30.9943 29.2956C30.9943 30.0146 31.5763 30.5966 32.2954 30.5966H42.7044C43.4237 30.5966 44.0055 30.0146 44.0055 29.2956C44.0057 25.7084 41.087 22.7899 37.5 22.7899ZM27.091 43.608C27.091 40.7376 24.7569 38.4034 21.8864 38.4034C19.016 38.4034 16.6819 40.7376 16.6819 43.608C16.6819 46.4783 19.0162 48.8124 21.8864 48.8124C24.7569 48.8124 27.091 46.4782 27.091 43.608ZM21.8865 48.8124C18.2996 48.8124 15.3809 51.7311 15.3809 55.3181C15.3809 56.0373 15.9628 56.6191 16.6819 56.6191H27.091C27.8102 56.6191 28.392 56.0372 28.392 55.3181C28.392 51.731 25.4735 48.8124 21.8865 48.8124ZM58.3181 43.608C58.3181 40.7376 55.9838 38.4034 53.1136 38.4034C50.2433 38.4034 47.909 40.7376 47.909 43.608C47.909 46.4783 50.2431 48.8124 53.1136 48.8124C55.9838 48.8124 58.3181 46.4782 58.3181 43.608ZM53.1136 48.8124C49.5267 48.8124 46.6078 51.7311 46.6078 55.3181C46.6078 56.0373 47.1898 56.6191 47.9089 56.6191H58.3179C59.0372 56.6191 59.619 56.0372 59.619 55.3181C59.6191 51.731 56.7006 48.8124 53.1136 48.8124ZM43.2864 41.1429L38.8011 38.9002V34.5C38.8011 33.7808 38.2191 33.1989 37.5 33.1989C36.7809 33.1989 36.1989 33.7809 36.1989 34.5V38.9002L31.7136 41.1429C31.0707 41.4645 30.8102 42.2458 31.1316 42.8887C31.4543 43.5316 32.2345 43.7896 32.8774 43.4707L37.5 41.1593L42.1226 43.4706C42.7721 43.7931 43.5486 43.5265 43.8684 42.8886C44.1898 42.2458 43.9293 41.4643 43.2864 41.1429Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_2575">
+                                        <rect width="75" height="75" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="quality-block__title">
+                            Third party inspection
+                        </h3>
+                        <p class="quality-block__description">
+                            Everything executed in your project will be inspected by a third party versus upon specs 
+                        </p>
+                    </div>
+                    <div class="swiper-slide quality-block">
+                        <div class="quality-block__icon quality-icon_three">
+                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_2576)">
+                                    <path d="M37.5 75C58.2107 75 75 58.2107 75 37.5C75 16.7893 58.2107 0 37.5 0C16.7893 0 0 16.7893 0 37.5C0 58.2107 16.7893 75 37.5 75Z" fill="#202939"/>
+                                    <path d="M36.3591 31.0888L36.2273 31.8766L36.9344 31.5092C37.28 31.3267 37.7077 31.32 38.0658 31.5092L38.7729 31.8766L38.6411 31.0888C38.5763 30.6949 38.7057 30.2913 38.9911 30.0102L39.5592 29.4505L38.773 29.3303C38.3776 29.2702 38.0371 29.0229 37.8574 28.665L37.5001 27.9492L37.1429 28.665C36.9632 29.0229 36.6227 29.2704 36.2273 29.3303L35.4411 29.4505L36.0092 30.0102C36.2943 30.2914 36.4237 30.6949 36.3591 31.0888ZM49.7727 16.5923H25.2273C24.549 16.5923 24 17.1424 24 17.8221V57.1777C24 57.8576 24.5489 58.4075 25.2273 58.4075H41.1818V49.7984C41.1818 49.1187 41.7307 48.5686 42.4092 48.5686H51V17.8221C51 17.1424 50.4511 16.5923 49.7727 16.5923ZM31.6633 28.2207C31.8072 27.7764 32.1883 27.4545 32.6484 27.3848L35.2324 26.9932L36.4021 24.6512C36.8192 23.8201 38.1807 23.8201 38.5977 24.6512L39.7674 26.9932L42.3514 27.3848C42.8117 27.4545 43.1927 27.7764 43.3366 28.2207C43.4804 28.6627 43.3605 29.1503 43.0297 29.477L41.1673 31.3145L41.5964 33.8991C41.6731 34.358 41.4837 34.8216 41.1073 35.0955C40.7317 35.3704 40.2287 35.4073 39.8202 35.1915L37.5 33.9857L35.1797 35.1915C34.7673 35.4053 34.2687 35.3693 33.8925 35.0955C33.5162 34.8216 33.3268 34.358 33.4035 33.8991L33.8326 31.3145L31.9701 29.477C31.6393 29.1503 31.5194 28.6627 31.6633 28.2207ZM35.0455 51.0285H30.1363C29.458 51.0285 28.909 50.4784 28.909 49.7985C28.909 49.1188 29.4579 48.5687 30.1363 48.5687H35.0455C35.7238 48.5687 36.2728 49.1188 36.2728 49.7985C36.2727 50.4784 35.7238 51.0285 35.0455 51.0285ZM44.8637 46.109H30.1363C29.458 46.109 28.909 45.5589 28.909 44.8791C28.909 44.1994 29.4579 43.6493 30.1363 43.6493H44.8637C45.542 43.6493 46.091 44.1994 46.091 44.8791C46.0908 45.559 45.542 46.109 44.8637 46.109ZM44.8637 41.1896H30.1363C29.458 41.1896 28.909 40.6395 28.909 39.9597C28.909 39.28 29.4579 38.7299 30.1363 38.7299H44.8637C45.542 38.7299 46.091 39.28 46.091 39.9597C46.091 40.6395 45.542 41.1896 44.8637 41.1896ZM43.6363 57.687L50.2808 51.0285H43.6363V57.687Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_2576">
+                                        <rect width="75" height="75" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="quality-block__title">
+                            Reviews and rating
+                        </h3>
+                        <p class="quality-block__description">
+                            Contractors are reviewed after each project against timeliness, quality, and responsiveness
+                        </p>
+                    </div>
+                    <div class="swiper-slide quality-block">
+                        <div class="quality-block__icon quality-icon_four">
+                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_2577)">
+                                    <path d="M37.5 75C58.2107 75 75 58.2107 75 37.5C75 16.7893 58.2107 0 37.5 0C16.7893 0 0 16.7893 0 37.5C0 58.2107 16.7893 75 37.5 75Z" fill="#202939"/>
+                                    <path d="M40.0784 36.1989H46.0054C46.4997 32.2941 46.1924 28.9188 44.6007 26.5217C43.3402 24.625 41.359 23.5811 38.7773 23.3074V21.8865C38.7773 19.7341 40.5282 17.9832 42.6807 17.9832C43.3999 17.9832 43.9818 17.4012 43.9818 16.6821C43.9818 15.963 43.3998 15.3809 42.6805 15.3809C39.8781 15.3809 37.5055 17.1721 36.5921 19.6619C35.4404 18.6299 33.936 17.9832 32.2717 17.9832C31.5524 17.9832 30.9706 18.5651 30.9706 19.2842C30.9706 20.0033 31.5526 20.5853 32.2717 20.5853C34.0163 20.5853 35.4795 21.7433 35.978 23.3253C33.4998 23.632 31.5917 24.669 30.3656 26.5128C29.539 27.7554 29.0827 29.2879 28.8846 30.9943H34.8738C35.593 30.9943 36.1749 31.5763 36.1749 32.2954C36.1749 33.0145 35.5929 33.5965 34.8738 33.5965H28.7784C28.841 36.0356 29.2949 38.7044 29.974 41.4032H34.8738C35.593 41.4032 36.1749 41.9852 36.1749 42.7043C36.1749 43.4234 35.5929 44.0054 34.8738 44.0054H30.6885C32.1808 49.0311 34.2184 53.8992 35.6094 57.2174L36.2714 58.8095C36.4709 59.2986 36.9474 59.6188 37.476 59.6188C38.0046 59.6188 38.481 59.2986 38.6805 58.8095L39.3527 57.1983C40.462 54.5616 41.5425 51.8704 42.5124 49.21H40.0782C39.359 49.21 38.7772 48.628 38.7772 47.9087C38.7772 47.1896 39.3592 46.6077 40.0782 46.6077H43.4261C44.3332 43.9072 45.0764 41.2775 45.5711 38.8009H40.0782C39.359 38.8009 38.7772 38.2189 38.7772 37.4999C38.7772 36.7808 39.3592 36.1989 40.0784 36.1989Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_2577">
+                                        <rect width="75" height="75" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="quality-block__title">
+                            Contractor incentives
+                        </h3>
+                        <p class="quality-block__description">
+                            We implement contactor incentives on quality and timeliness of delivery 
+                        </p>
+                    </div>
+                    <div class="swiper-slide quality-block">
+                        <div class="quality-block__icon quality-icon_five">
+                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_2578)">
+                                    <path d="M37.5 75C58.2107 75 75 58.2107 75 37.5C75 16.7893 58.2107 0 37.5 0C16.7893 0 0 16.7893 0 37.5C0 58.2107 16.7893 75 37.5 75Z" fill="#202939"/>
+                                    <path d="M37.5 48.9219C42.2429 47.6058 45.5295 43.3056 45.5295 38.364V32.6649L37.5 30.6591L29.4705 32.6648V38.3639C29.4705 43.3056 32.7571 47.6056 37.5 48.9219ZM33.2478 38.9819C33.6959 38.5341 34.4218 38.5341 34.8698 38.9819L36.353 40.4637L40.1302 36.6896C40.5783 36.2419 41.3042 36.2419 41.7522 36.6896C42.2001 37.1374 42.2003 37.8626 41.7522 38.3103L37.1639 42.8948C36.9398 43.1186 36.6463 43.2305 36.3529 43.2305C36.0593 43.2305 35.7659 43.1186 35.5419 42.8948L33.2477 40.6025C32.7997 40.1548 32.7997 39.4296 33.2478 38.9819ZM55.853 19.1622H31.0926L35.6808 23.7467H57V20.3083C57 19.6748 56.4869 19.1622 55.853 19.1622ZM34.3949 25.7031L27.8485 19.1622H19.147C18.5129 19.1622 18 19.6748 18 20.3083V54.6916C18 55.3252 18.5131 55.8377 19.147 55.8377H55.8529C56.4869 55.8377 56.9999 55.3252 56.9999 54.6916V26.0389H35.2058C34.9012 26.0389 34.61 25.918 34.3949 25.7031ZM22.5882 24.8928C22.5882 24.2592 23.1013 23.7467 23.7352 23.7467H28.3235C28.9576 23.7467 29.4705 24.2592 29.4705 24.8928C29.4705 25.5263 28.9574 26.0389 28.3235 26.0389H23.7352C23.1013 26.0389 22.5882 25.5263 22.5882 24.8928ZM37.7778 28.3658L46.9543 30.6581C47.4651 30.7857 47.8235 31.2434 47.8235 31.7694V38.364C47.8235 44.455 43.6923 49.7412 37.7778 51.2187C37.686 51.2422 37.594 51.2534 37.5 51.2534C37.406 51.2534 37.314 51.2422 37.2222 51.2187C31.3077 49.7413 27.1765 44.455 27.1765 38.364V31.7694C27.1765 31.2434 27.535 30.7857 28.0457 30.6581L37.2222 28.3658C37.4059 28.3188 37.5941 28.3188 37.7778 28.3658Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_2578">
+                                        <rect width="75" height="75" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="quality-block__title">
+                            Warranty period
+                        </h3>
+                        <p class="quality-block__description">
+                            We withhold a portion of payment for a year after project completion
+                        </p>
+                    </div>
                 </div>
-                <div class="quality-block">
-                    <div class="quality-block__icon quality-icon_two"></div>
-                    <h3 class="quality-block__title">
-                        Third party inspection
-                    </h3>
-                    <p class="quality-block__description">
-                        Everything executed in your project will be inspected by a third party versus upon specs 
-                    </p>
-                </div>
-                <div class="quality-block">
-                    <div class="quality-block__icon quality-icon_three"></div>
-                    <h3 class="quality-block__title">
-                        Reviews and rating
-                    </h3>
-                    <p class="quality-block__description">
-                        Contractors are reviewed after each project against timeliness, quality, and responsiveness
-                    </p>
-                </div>
-                <div class="quality-block">
-                    <div class="quality-block__icon quality-icon_four"></div>
-                    <h3 class="quality-block__title">
-                        Contractor incentives
-                    </h3>
-                    <p class="quality-block__description">
-                        We implement contactor incentives on quality and timeliness of delivery 
-                    </p>
-                </div>
-                <div class="quality-block">
-                    <div class="quality-block__icon quality-icon_five"></div>
-                    <h3 class="quality-block__title">
-                        Warranty period
-                    </h3>
-                    <p class="quality-block__description">
-                        We withhold a portion of payment for a year after project completion
-                    </p>
+                <div class="details-row">
+                    <div class="quality-block">
+                        <div class="quality-block__icon quality-icon_one">
+                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_2574)">
+                                    <path d="M37.5 75C58.2107 75 75 58.2107 75 37.5C75 16.7893 58.2107 0 37.5 0C16.7893 0 0 16.7893 0 37.5C0 58.2107 16.7893 75 37.5 75Z" fill="#202939"/>
+                                    <path d="M42.1578 41C47.9365 41 52.6371 36.2899 52.6371 30.5C52.6371 24.7099 47.9365 20 42.1578 20C36.3791 20 31.6785 24.7099 31.6785 30.5C31.6785 36.2901 36.3791 41 42.1578 41ZM38.7762 32.5018C39.3084 32.1339 40.0315 32.2615 40.3977 32.7923C41.0458 33.7243 41.8191 34.1663 42.5081 33.9465C42.9948 33.7938 43.3223 33.346 43.3223 32.8333C43.3223 32.1896 42.7992 31.6667 42.1578 31.6667C40.2316 31.6667 38.6648 30.0966 38.6648 28.1667C38.6648 26.674 39.6006 25.382 40.9935 24.8864V23.5C40.9935 22.8552 41.5143 22.3333 42.1578 22.3333C42.8013 22.3333 43.3223 22.8552 43.3223 23.5V24.8929C44.2471 25.206 45.1197 25.8542 45.8284 26.8757C46.1968 27.4044 46.0672 28.1323 45.5372 28.5004C45.012 28.8672 44.2842 28.7396 43.918 28.2087C43.2676 27.2745 42.4899 26.8427 41.8076 27.0535C41.3208 27.2062 40.9934 27.6539 40.9934 28.1665C40.9934 28.8103 41.5164 29.3332 42.1577 29.3332C44.0839 29.3332 45.6507 30.9032 45.6507 32.8332C45.6507 34.3259 44.7149 35.6179 43.322 36.1146V37.5C43.322 38.1448 42.8012 38.6667 42.1576 38.6667C41.5139 38.6667 40.9932 38.1449 40.9932 37.5V36.1296C40.0678 35.8174 39.1958 35.1466 38.4871 34.1252C38.1189 33.5966 38.2486 32.8698 38.7762 32.5018ZM17.7061 44.5V53.8333C17.7061 54.4781 18.2269 55 18.8705 55H24.6923V43.3333H18.8705C18.2269 43.3333 17.7061 43.8551 17.7061 44.5ZM56.8376 42.1735C56.827 42.1654 56.8163 42.1572 56.8056 42.1492C55.2015 40.9414 52.8803 41.4529 51.6762 43.0613L47.2801 48.9339C46.6206 49.8148 45.5857 50.3332 44.4866 50.3332H35.5673C34.9237 50.3332 34.403 49.8115 34.403 49.1665C34.403 48.5216 34.9238 47.9999 35.5673 47.9999H44.4866C45.7728 47.9999 46.8153 46.9551 46.8153 45.6665C46.8153 44.3778 45.7728 43.3332 44.4866 43.3332H37.9802C36.8931 42.2646 35.4014 40.9999 32.843 40.9999C31.4034 40.9999 30.0958 41.6561 28.8291 42.2895C28.2004 42.6051 27.5962 42.896 27.0212 43.0938V55H45.613C47.4521 55 49.1859 54.1405 50.3018 52.6758L57.056 43.8096C57.4527 43.2859 57.3359 42.5526 56.8376 42.1735Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_2574">
+                                        <rect width="75" height="75" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="quality-block__title">
+                            Withhold payment
+                        </h3>
+                        <p class="quality-block__description">
+                            Payments are secured in your account until work is delivered as per the agreed upon specs
+                        </p>
+                    </div>
+                    <div class="quality-block">
+                        <div class="quality-block__icon quality-icon_two">
+                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_2575)">
+                                    <path d="M37.5 75C58.2107 75 75 58.2107 75 37.5C75 16.7893 58.2107 0 37.5 0C16.7893 0 0 16.7893 0 37.5C0 58.2107 16.7893 75 37.5 75Z" fill="#202939"/>
+                                    <path d="M42.7044 17.5853C42.7044 14.7151 40.3704 12.3809 37.5 12.3809C34.6296 12.3809 32.2956 14.7151 32.2956 17.5853C32.2956 20.4557 34.6296 22.7899 37.5 22.7899C40.3704 22.7899 42.7044 20.4557 42.7044 17.5853ZM37.5 22.7899C33.913 22.7899 30.9943 25.7086 30.9943 29.2956C30.9943 30.0146 31.5763 30.5966 32.2954 30.5966H42.7044C43.4237 30.5966 44.0055 30.0146 44.0055 29.2956C44.0057 25.7084 41.087 22.7899 37.5 22.7899ZM27.091 43.608C27.091 40.7376 24.7569 38.4034 21.8864 38.4034C19.016 38.4034 16.6819 40.7376 16.6819 43.608C16.6819 46.4783 19.0162 48.8124 21.8864 48.8124C24.7569 48.8124 27.091 46.4782 27.091 43.608ZM21.8865 48.8124C18.2996 48.8124 15.3809 51.7311 15.3809 55.3181C15.3809 56.0373 15.9628 56.6191 16.6819 56.6191H27.091C27.8102 56.6191 28.392 56.0372 28.392 55.3181C28.392 51.731 25.4735 48.8124 21.8865 48.8124ZM58.3181 43.608C58.3181 40.7376 55.9838 38.4034 53.1136 38.4034C50.2433 38.4034 47.909 40.7376 47.909 43.608C47.909 46.4783 50.2431 48.8124 53.1136 48.8124C55.9838 48.8124 58.3181 46.4782 58.3181 43.608ZM53.1136 48.8124C49.5267 48.8124 46.6078 51.7311 46.6078 55.3181C46.6078 56.0373 47.1898 56.6191 47.9089 56.6191H58.3179C59.0372 56.6191 59.619 56.0372 59.619 55.3181C59.6191 51.731 56.7006 48.8124 53.1136 48.8124ZM43.2864 41.1429L38.8011 38.9002V34.5C38.8011 33.7808 38.2191 33.1989 37.5 33.1989C36.7809 33.1989 36.1989 33.7809 36.1989 34.5V38.9002L31.7136 41.1429C31.0707 41.4645 30.8102 42.2458 31.1316 42.8887C31.4543 43.5316 32.2345 43.7896 32.8774 43.4707L37.5 41.1593L42.1226 43.4706C42.7721 43.7931 43.5486 43.5265 43.8684 42.8886C44.1898 42.2458 43.9293 41.4643 43.2864 41.1429Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_2575">
+                                        <rect width="75" height="75" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="quality-block__title">
+                            Third party inspection
+                        </h3>
+                        <p class="quality-block__description">
+                            Everything executed in your project will be inspected by a third party versus upon specs 
+                        </p>
+                    </div>
+                    <div class="quality-block">
+                        <div class="quality-block__icon quality-icon_three">
+                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_2576)">
+                                    <path d="M37.5 75C58.2107 75 75 58.2107 75 37.5C75 16.7893 58.2107 0 37.5 0C16.7893 0 0 16.7893 0 37.5C0 58.2107 16.7893 75 37.5 75Z" fill="#202939"/>
+                                    <path d="M36.3591 31.0888L36.2273 31.8766L36.9344 31.5092C37.28 31.3267 37.7077 31.32 38.0658 31.5092L38.7729 31.8766L38.6411 31.0888C38.5763 30.6949 38.7057 30.2913 38.9911 30.0102L39.5592 29.4505L38.773 29.3303C38.3776 29.2702 38.0371 29.0229 37.8574 28.665L37.5001 27.9492L37.1429 28.665C36.9632 29.0229 36.6227 29.2704 36.2273 29.3303L35.4411 29.4505L36.0092 30.0102C36.2943 30.2914 36.4237 30.6949 36.3591 31.0888ZM49.7727 16.5923H25.2273C24.549 16.5923 24 17.1424 24 17.8221V57.1777C24 57.8576 24.5489 58.4075 25.2273 58.4075H41.1818V49.7984C41.1818 49.1187 41.7307 48.5686 42.4092 48.5686H51V17.8221C51 17.1424 50.4511 16.5923 49.7727 16.5923ZM31.6633 28.2207C31.8072 27.7764 32.1883 27.4545 32.6484 27.3848L35.2324 26.9932L36.4021 24.6512C36.8192 23.8201 38.1807 23.8201 38.5977 24.6512L39.7674 26.9932L42.3514 27.3848C42.8117 27.4545 43.1927 27.7764 43.3366 28.2207C43.4804 28.6627 43.3605 29.1503 43.0297 29.477L41.1673 31.3145L41.5964 33.8991C41.6731 34.358 41.4837 34.8216 41.1073 35.0955C40.7317 35.3704 40.2287 35.4073 39.8202 35.1915L37.5 33.9857L35.1797 35.1915C34.7673 35.4053 34.2687 35.3693 33.8925 35.0955C33.5162 34.8216 33.3268 34.358 33.4035 33.8991L33.8326 31.3145L31.9701 29.477C31.6393 29.1503 31.5194 28.6627 31.6633 28.2207ZM35.0455 51.0285H30.1363C29.458 51.0285 28.909 50.4784 28.909 49.7985C28.909 49.1188 29.4579 48.5687 30.1363 48.5687H35.0455C35.7238 48.5687 36.2728 49.1188 36.2728 49.7985C36.2727 50.4784 35.7238 51.0285 35.0455 51.0285ZM44.8637 46.109H30.1363C29.458 46.109 28.909 45.5589 28.909 44.8791C28.909 44.1994 29.4579 43.6493 30.1363 43.6493H44.8637C45.542 43.6493 46.091 44.1994 46.091 44.8791C46.0908 45.559 45.542 46.109 44.8637 46.109ZM44.8637 41.1896H30.1363C29.458 41.1896 28.909 40.6395 28.909 39.9597C28.909 39.28 29.4579 38.7299 30.1363 38.7299H44.8637C45.542 38.7299 46.091 39.28 46.091 39.9597C46.091 40.6395 45.542 41.1896 44.8637 41.1896ZM43.6363 57.687L50.2808 51.0285H43.6363V57.687Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_2576">
+                                        <rect width="75" height="75" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="quality-block__title">
+                            Reviews and rating
+                        </h3>
+                        <p class="quality-block__description">
+                            Contractors are reviewed after each project against timeliness, quality, and responsiveness
+                        </p>
+                    </div>
+                    <div class="quality-block">
+                        <div class="quality-block__icon quality-icon_four">
+                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_2577)">
+                                    <path d="M37.5 75C58.2107 75 75 58.2107 75 37.5C75 16.7893 58.2107 0 37.5 0C16.7893 0 0 16.7893 0 37.5C0 58.2107 16.7893 75 37.5 75Z" fill="#202939"/>
+                                    <path d="M40.0784 36.1989H46.0054C46.4997 32.2941 46.1924 28.9188 44.6007 26.5217C43.3402 24.625 41.359 23.5811 38.7773 23.3074V21.8865C38.7773 19.7341 40.5282 17.9832 42.6807 17.9832C43.3999 17.9832 43.9818 17.4012 43.9818 16.6821C43.9818 15.963 43.3998 15.3809 42.6805 15.3809C39.8781 15.3809 37.5055 17.1721 36.5921 19.6619C35.4404 18.6299 33.936 17.9832 32.2717 17.9832C31.5524 17.9832 30.9706 18.5651 30.9706 19.2842C30.9706 20.0033 31.5526 20.5853 32.2717 20.5853C34.0163 20.5853 35.4795 21.7433 35.978 23.3253C33.4998 23.632 31.5917 24.669 30.3656 26.5128C29.539 27.7554 29.0827 29.2879 28.8846 30.9943H34.8738C35.593 30.9943 36.1749 31.5763 36.1749 32.2954C36.1749 33.0145 35.5929 33.5965 34.8738 33.5965H28.7784C28.841 36.0356 29.2949 38.7044 29.974 41.4032H34.8738C35.593 41.4032 36.1749 41.9852 36.1749 42.7043C36.1749 43.4234 35.5929 44.0054 34.8738 44.0054H30.6885C32.1808 49.0311 34.2184 53.8992 35.6094 57.2174L36.2714 58.8095C36.4709 59.2986 36.9474 59.6188 37.476 59.6188C38.0046 59.6188 38.481 59.2986 38.6805 58.8095L39.3527 57.1983C40.462 54.5616 41.5425 51.8704 42.5124 49.21H40.0782C39.359 49.21 38.7772 48.628 38.7772 47.9087C38.7772 47.1896 39.3592 46.6077 40.0782 46.6077H43.4261C44.3332 43.9072 45.0764 41.2775 45.5711 38.8009H40.0782C39.359 38.8009 38.7772 38.2189 38.7772 37.4999C38.7772 36.7808 39.3592 36.1989 40.0784 36.1989Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_2577">
+                                        <rect width="75" height="75" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="quality-block__title">
+                            Contractor incentives
+                        </h3>
+                        <p class="quality-block__description">
+                            We implement contactor incentives on quality and timeliness of delivery 
+                        </p>
+                    </div>
+                    <div class="quality-block">
+                        <div class="quality-block__icon quality-icon_five">
+                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_2578)">
+                                    <path d="M37.5 75C58.2107 75 75 58.2107 75 37.5C75 16.7893 58.2107 0 37.5 0C16.7893 0 0 16.7893 0 37.5C0 58.2107 16.7893 75 37.5 75Z" fill="#202939"/>
+                                    <path d="M37.5 48.9219C42.2429 47.6058 45.5295 43.3056 45.5295 38.364V32.6649L37.5 30.6591L29.4705 32.6648V38.3639C29.4705 43.3056 32.7571 47.6056 37.5 48.9219ZM33.2478 38.9819C33.6959 38.5341 34.4218 38.5341 34.8698 38.9819L36.353 40.4637L40.1302 36.6896C40.5783 36.2419 41.3042 36.2419 41.7522 36.6896C42.2001 37.1374 42.2003 37.8626 41.7522 38.3103L37.1639 42.8948C36.9398 43.1186 36.6463 43.2305 36.3529 43.2305C36.0593 43.2305 35.7659 43.1186 35.5419 42.8948L33.2477 40.6025C32.7997 40.1548 32.7997 39.4296 33.2478 38.9819ZM55.853 19.1622H31.0926L35.6808 23.7467H57V20.3083C57 19.6748 56.4869 19.1622 55.853 19.1622ZM34.3949 25.7031L27.8485 19.1622H19.147C18.5129 19.1622 18 19.6748 18 20.3083V54.6916C18 55.3252 18.5131 55.8377 19.147 55.8377H55.8529C56.4869 55.8377 56.9999 55.3252 56.9999 54.6916V26.0389H35.2058C34.9012 26.0389 34.61 25.918 34.3949 25.7031ZM22.5882 24.8928C22.5882 24.2592 23.1013 23.7467 23.7352 23.7467H28.3235C28.9576 23.7467 29.4705 24.2592 29.4705 24.8928C29.4705 25.5263 28.9574 26.0389 28.3235 26.0389H23.7352C23.1013 26.0389 22.5882 25.5263 22.5882 24.8928ZM37.7778 28.3658L46.9543 30.6581C47.4651 30.7857 47.8235 31.2434 47.8235 31.7694V38.364C47.8235 44.455 43.6923 49.7412 37.7778 51.2187C37.686 51.2422 37.594 51.2534 37.5 51.2534C37.406 51.2534 37.314 51.2422 37.2222 51.2187C31.3077 49.7413 27.1765 44.455 27.1765 38.364V31.7694C27.1765 31.2434 27.535 30.7857 28.0457 30.6581L37.2222 28.3658C37.4059 28.3188 37.5941 28.3188 37.7778 28.3658Z" fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_2578">
+                                        <rect width="75" height="75" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3 class="quality-block__title">
+                            Warranty period
+                        </h3>
+                        <p class="quality-block__description">
+                            We withhold a portion of payment for a year after project completion
+                        </p>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </section>
     <section class="fifth">
@@ -301,9 +552,11 @@
                         <p class="question-block__text">
                         Can I renovate a house on someone's behalf if I am not the owner ?
                     </p>
-                    <span class="plus active">+</span>
+                    <span class="plus">+</span>
                     </div>
-                    <p class="question-block__description"></p>
+                    <p class="question-block__description">
+                        Can I renovate a house on someone's behalf if I am not the owner ?
+                    </p>
                 </div>
                 <div class="question-block">
                     <div class="question-block__wrapper">
@@ -312,7 +565,9 @@
                         </p>
                         <span class="plus">+</span>
                     </div>
-                    <p class="question-block__description"></p>
+                    <p class="question-block__description">
+                        Can I renovate a house on someone's behalf if I am not the owner ?
+                    </p>
                 </div>
                 <div class="question-block">
                     <div class="question-block__wrapper">
@@ -321,8 +576,9 @@
                         </p>
                         <span class="plus">+</span>
                     </div>
-                    
-                    <p class="question-block__description"></p>
+                    <p class="question-block__description">
+                        Can I renovate a house on someone's behalf if I am not the owner ?
+                    </p>
                 </div>
                 <div class="question-block">
                     <div class="question-block__wrapper">
@@ -331,7 +587,9 @@
                         </p>
                         <span class="plus">+</span>
                     </div>
-                    <p class="question-block__description"></p>
+                    <p class="question-block__description">
+                        Can I renovate a house on someone's behalf if I am not the owner ?
+                    </p>
                 </div>
                 <div class="question-block">
                     <div class="question-block__wrapper">
@@ -340,15 +598,92 @@
                         </p>
                         <span class="plus">+</span>
                     </div>
-                    <p class="question-block__description"></p>
+                    <p class="question-block__description">
+                        Can I renovate a house on someone's behalf if I am not the owner ?
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <footer class="footer" id="footer">
         <div class="container">
-
+            <div class="footer-row">
+                <div class="footer__block">
+                    <a href="#" class="footer-logo"></a>
+                    <p class="footer__block_text">
+                        Start your home renovation journey the smart way
+                    </p>
+                    <a href="#" class="footer__block_btn">
+                        Get started
+                    </a>
+                </div>
+                <div class="footer__block">
+                    <h4 class="footer__block_title">Quick Links</h4>
+                    <ul class="footer__block_list">
+                        <li class="footer__block_item">
+                            <a href="#" class="footer__block_link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="footer__block_item">
+                            <a href="#" class="footer__block_link">
+                                Our Services
+                            </a>
+                        </li>
+                        <li class="footer__block_item">
+                            <a href="#" class="footer__block_link">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="footer__block_item">
+                            <a href="#" class="footer__block_link">
+                                FAQs
+                            </a>
+                        </li>
+                        <li class="footer__block_item">
+                            <a href="#" class="footer__block_link">
+                                Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h4 class="footer__block_title">Legal</h4>
+                    <ul class="footer__block_list">
+                        <li class="footer__block_item">
+                            <a href="#" class="footer__block_link">
+                                Terms and Conditions
+                            </a>
+                        </li>
+                        <li class="footer__block_item">
+                            <a href="#" class="footer__block_link">
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__block">
+                    <h4 class="footer__block_title">Contact Us</h4>
+                    <ul class="footer__block_list">
+                        <li class="footer__block_item">
+                            <a href="#" class="footer__block_link">
+                                +1 0234 573 875
+                            </a>
+                        </li>
+                        <li class="footer__block_item">
+                            <a href="#" class="footer__block_link">
+                                reno.renovation.mailus.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <span class="footer-span__text">
+                2023 © Reno. All Rights Reserved
+            </span>
         </div>
     </footer>
+    <script src="js/swiper.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

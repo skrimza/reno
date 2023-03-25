@@ -5,6 +5,7 @@ body
     padding: 0
     font-family: 'Roobert', sans-serif
     font-size: 18px
+    overflowX: hidden
 h1, h2, h3, h4, h5, h6
     margin: 0
     padding: 0
@@ -23,24 +24,42 @@ ol, ul, li
     max-width: 1284px
     width: 100%
     margin: 0 auto
+    @media screen and (max-width: 1300px)
+        padding-left: 20px
+        padding-right: 20px
 h2.section-title
     color: #274BF1
     font-size: 40px
     text-align: center
     text-transform: uppercase
+    @media screen and (max-width: 768px)
+        font-size: 32px
+    @media screen and (max-width: 576px)
+        font-size: 20px
 p.section-description
     color: #202939
     font-size: 18px
     text-align: center
+    @media screen and (max-width: 768px)
+        font-size: 16px
+    @media screen and (max-width: 576px)
+        font-size: 15px
 .header
     background: url('../images/bg.jpg') no-repeat right bottom / cover
 .nav
     padding-top: 61px
     padding-bottom: 60px
+    @media screen and (max-width: 992px)
+        padding-top: 42px
+        padding-bottom: 20px
+    @media screen and (max-width: 576px)
+        padding-bottom: 10px
 .menu
     display: flex
     justify-content: space-between
     align-items: center
+    @media screen and (max-width: 768px)
+        display: none
     &__list
         display: flex
     &__item
@@ -60,21 +79,76 @@ p.section-description
             background: #274BF1
             color: #FFFFFF
             border: 1px solid #274BF1
+.mobile
+    display: none
+    @media screen and (max-width: 768px)
+        display: block
+    &-btn
+        border: none
+        background: none
+        position: relative
+        width: 31px
+        height: 27px
+        cursor: pointer
+        & span
+            position: absolute
+            display: block
+            width: 100%
+            height: 2px
+            background: #ffffff
+            left: 0
+            &:first-of-type
+                top: 0
+            &:last-of-type
+                bottom: 0
 .content
-    padding-top: 144px
+    padding-top: 204px
     padding-bottom: 327px
+    @media screen and (max-width: 992px)
+        padding-top: 104px
+        padding-bottom: 157px
+    @media screen and (max-width: 768px)
+        padding-top: 75px
+        padding-bottom: 120px
+    @media screen and (max-width: 576px)
+        padding-top: 10px
+        padding-bottom: 90px
     &__logo
-        background: url('../images/Logo.svg')
+        background: url('../images/Logo.png') no-repeat center center / 197px
         width: 197px
         height: 53px
         margin-bottom: 34px
+        display: block
+        @media screen and (max-width: 992px)
+            margin-bottom: 30px
+        @media screen and (max-width: 768px)
+            margin-bottom: 25px
+        @media screen and (max-width: 576px)
+            background: url('../images/Logo.png') no-repeat center center / 123px
+            width: 123px
     &__title
         font-size: 65px
         max-width: 536px
         margin-bottom: 20px
+        @media screen and (max-width: 768px)
+            font-size: 46px
+            margin-bottom: 20px
+            color: #ffffff
+        @media screen and (max-width: 576px)
+            font-size: 40px
+            max-width: 327px
+            margin-bottom: 20px
     &__description
         font-size: 23px
         margin-bottom: 56px
+        @media screen and (max-width: 992px)
+            margin-bottom: 45px
+        @media screen and (max-width: 768px)
+            color: #ffffff
+            margin-bottom: 35px
+        @media screen and (max-width: 576px)
+            font-size: 15px
+            max-width: 252px
     &__btn
         display: inline-block
         border: 1px solid #202939
@@ -82,6 +156,9 @@ p.section-description
         border-radius: 100px
         color: #202939
         transition: all 0.5s ease
+        @media screen and (max-width: 576px)
+            padding: 15px 25px
+            font-size: 17px
         &:hover
             background: #274BF1
             color: #FFFFFF
@@ -89,24 +166,51 @@ p.section-description
 .first
     padding-top: 117px
     padding-bottom: 84px
+    @media screen and (max-width: 992px)
+        padding-top: 90px
+        padding-bottom: 20px
+    @media screen and (max-width: 768px)
+        padding-top: 70px
+    @media screen and (max-width: 576px)
+        padding-top: 30px
+        padding-bottom: 20px
     &-title
         margin-bottom: 15px
+
     &-description
         max-width: 370px
         margin: 0 auto
         margin-bottom: 60px
+        @media screen and (max-width: 992px)
+            margin-bottom: 40px
+        @media screen and (max-width: 576px)
+            margin-bottom: 20px
+.mySwiperWrap
+    display: none !important
+    @media screen and (max-width: 992px)
+        display: flex !important
 .swiper
     width: 100%
-
     &__grid
         display: grid
         grid-template: repeat(2, auto)/ repeat(3, auto)
         grid-gap: 25px
+        @media screen and (max-width: 1200px)
+            grid-template: repeat(3, auto)/ repeat(2, auto)
+            justify-content: center
+        @media screen and (max-width: 992px)
+            display: none
 .slider
     background: #F5F6F8
     padding: 20px
     max-width: 412px
     border-radius: 20px
+    @media screen and (max-width: 768px)
+        max-width: 345px
+        width: 100%
+        padding: 15px
+    @media screen and (max-width: 576px)
+        width: 100%
     &__block
         width: 372px
         height: 187px
@@ -114,6 +218,11 @@ p.section-description
         margin-bottom: 10px
         border-radius: 8px
         position: relative
+        @media screen and (max-width: 768px)
+            width: 315px
+        @media screen and (max-width: 576px)
+            max-width: 315px
+            width: 100%
         &_image
             width: 100%
             height: 100%
@@ -123,27 +232,50 @@ p.section-description
             object-fit: cover
     &-content
         padding-left: 64px
+        @media screen and (max-width: 576px)
+            padding-left: 50px
         &__text_title
             margin-bottom: 10px
             font-size: 24px
+            @media screen and (max-width: 768px)
+                font-size: 19px
         &__text_description
             font-size: 20px
             letter-spacing: 0.5px
+            @media screen and (max-width: 768px)
+                font-size: 16px
 .content-one
     background: url('../images/ficon6.svg') no-repeat left center/ 53px
+    @media screen and (max-width: 576px)
+        background: url('../images/ficon6.svg') no-repeat left center/ 45px
 .content-two
     background: url('../images/ficon3.svg') no-repeat left center/ 53px
+    @media screen and (max-width: 576px)
+        background: url('../images/ficon3.svg') no-repeat left center/ 45px
 .content-three
     background: url('../images/ficon5.svg') no-repeat left center/ 53px
+    @media screen and (max-width: 576px)
+        background: url('../images/ficon5.svg') no-repeat left center/ 45px
 .content-four
     background: url('../images/ficon1.svg') no-repeat left center/ 53px
+    @media screen and (max-width: 576px)
+        background: url('../images/ficon1.svg') no-repeat left center/ 45px
 .content-five
     background: url('../images/ficon4.svg') no-repeat left center/ 53px
+    @media screen and (max-width: 576px)
+        background: url('../images/ficon4.svg') no-repeat left center/ 45px
 .content-six
     background: url('../images/ficon2.svg') no-repeat left center/ 53px
+    @media screen and (max-width: 576px)
+        background: url('../images/ficon2.svg') no-repeat left center/ 45px
 .second
     padding-top: 80px
     padding-bottom: 83px
+    @media screen and (max-width: 992px)
+        padding-top: 20px
+        padding-bottom: 60px
+    @media screen and (max-width: 576px)
+        padding-bottom: 20px
     &-title
         margin-bottom: 10px
     &-description
@@ -157,32 +289,59 @@ p.section-description
         margin-bottom: 35px
         padding: 40px 30px
         border-radius: 20px
+        @media screen and (max-width: 576px)
+            margin-bottom: 10px
         &:last-of-type, &:first-of-type
             align-self: end
         &:last-of-type
             margin-bottom: 0
         &__title
             font-size: 32px
+            @media screen and (max-width: 768px)
+                font-size: 25px
+            @media screen and (max-width: 576px)
+                font-size: 19px
+                margin-bottom: 10px
         &__description
             font-size: 25px
+            @media screen and (max-width: 768px)
+                font-size: 20px
+            @media screen and (max-width: 576px)
+                font-size: 14px
         &__content
             padding-left: 105px
+            @media screen and (max-width: 768px)
+                padding-left: 0
+                padding-top: 60px
 .just-content_one
     background: url('../images/sicon1.png') no-repeat left center / 90px
+    @media screen and (max-width: 768px)
+        background: url('../images/sicon1.png') no-repeat left top / 50px
 .just-content_two
     background: url('../images/sicon2.png') no-repeat left center / 90px
+    @media screen and (max-width: 768px)
+        background: url('../images/sicon2.png') no-repeat left top / 50px
 .just-content_three
     background: url('../images/sicon3.png') no-repeat left center / 90px
+    @media screen and (max-width: 768px)
+        background: url('../images/sicon3.png') no-repeat left top / 50px
 .third
     padding-top: 80px
     position: relative
     padding-bottom: 84px
+    @media screen and (max-width: 768px)
+        padding-bottom: 30px
+    @media screen and (max-width: 576px)
+        padding-top: 20px
+        padding-bottom: 20px
 .argument
     &-container
         margin-right: 0
     &-row
         display: flex
         align-items: center
+        @media screen and (max-width: 768px)
+            flex-direction: column-reverse
     &__img
         position: absolute
         width: 100%
@@ -197,51 +356,116 @@ p.section-description
         border-radius: 0 20px 20px 0
         width: 84%
         margin-bottom: 50px
+        @media screen and (max-width: 992px)
+            width: 100%
+            border-radius: 0
+            margin-bottom: 0
+        @media screen and (max-width: 768px)
+            padding-top: 40px
+            padding-bottom: 53px
         &:last-of-type
             margin-bottom: 0
         &:nth-child(2n)
             transform: translateX(20%)
             background: #F5F6F8
             border-radius: 20px 0 0 20px
+            @media screen and (max-width: 992px)
+                border-radius: 0
+                width: 100%
+                transform: translateX(0)
             & .argument-container
                 margin-left: 0
             & .argument-row
                 flex-direction: row-reverse
+                @media screen and (max-width: 768px)
+                    flex-direction: column-reverse
             & .argument__bg
                 width: 380px
                 height: 380px
                 background: url('../images/bl-pattern.svg') no-repeat center center
+                @media screen and (max-width: 992px)
+                    background-size: 340px
             & .argument__content
                 margin-right: 100px
+                margin-left: 0
                 color: #202939
+                @media screen and (max-width: 1200px)
+                    margin-right: 40px
+                    margin-left: 0
+                
                 & ul.argument__list
                     list-style-image: url('../images/black-mark.svg')
     &__content
         margin-left: 100px
         color: #ffffff
+        @media screen and (max-width: 1200px)
+            margin-left: 40px
+        @media screen and (max-width: 768px)
+            margin-left: 0
+            align-self: start
+            margin-bottom: 33px
+        @media screen and (max-width: 576px)
+            margin-bottom: 30px
         & ul.argument__list
             list-style-image: url('../images/white-mark.svg')
             padding-left: 40px
+            @media screen and (max-width: 1200px)
+                max-width: 380px
             & li
                 font-size: 25px
+                @media screen and (max-width: 768px)
+                    font-size: 18px
+                @media screen and (max-width: 576px)
+                    font-size: 15px
         &_title
             font-size: 45px
             margin-bottom: 30px
+            max-width: 500px
+            @media screen and (max-width: 1200px)
+                max-width: 380px
+            @media screen and (max-width: 768px)
+                font-size: 36px
+            @media screen and (max-width: 576px)
+                font-size: 30px
     &__bg
         position: relative
         width: 380px
         height: 380px
         background: url('../images/pattern.svg') no-repeat center center
+        @media screen and (max-width: 992px)
+            background-size: 340px
 .fourth
     padding-top: 80px
     padding-bottom: 84px
+    @media screen and (max-width: 768px)
+        padding-top: 30px
+        padding-bottom: 30px
+    @media screen and (max-width: 576px)
+        padding-top: 20px
+        padding-bottom: 20px
     &-title
         max-width: 600px
         margin: 0 auto 80px
+        @media screen and (max-width: 768px)
+            margin-bottom: 30px
+            text-align: left !important
+        @media screen and (max-width: 576px)
+            margin-bottom: 20px
+.secSwiper
+    width: 100%
+    height: 322px
+    @media screen and (max-width: 576px)
+        height: 210px
+.quality-wrapper
+    display: none !important
+    @media screen and (max-width: 1100px)
+        display: flex !important
 .details-row
     display: flex
     justify-content: space-between
     height: 322px
+    @media screen and (max-width: 1100px)
+        display: none
 .quality-block
     background: #F5F6F8
     border-radius: 20px
@@ -249,45 +473,73 @@ p.section-description
     max-width: 245px
     align-self: start
     transition: all 0.5s ease
+    @media screen and (max-width: 1200px)
+        max-width: 220px
+    @media screen and (max-width: 576px)
+        max-width: 245px
+        width: 100% !important
+        padding: 29px 15px
     &:nth-child(2n+1)
         align-self: end        
     &__icon
         height: 75px
         margin-bottom: 20px
+        text-align: center
+        @media screen and (max-width: 576px)
+            height: 45px
+        & svg
+            @media screen and (max-width: 576px)
+                height: 45px
+                width: 45px
     &__title
         font-size: 20px
         margin-bottom: 10px
         text-align: center
+        @media screen and (max-width: 576px)
+            font-size: 19px
     &__description
         font-size: 14px
         text-align: center
-.quality-icon_one
-    background: url('../images/ticon1.svg') no-repeat center center
-.quality-icon_two
-    background: url('../images/ticon2.svg') no-repeat center center
-.quality-icon_three
-    background: url('../images/ticon3.svg') no-repeat center center
-.quality-icon_four
-    background: url('../images/ticon4.svg') no-repeat center center
-.quality-icon_five
-    background: url('../images/ticon5.svg') no-repeat center center
-.quality-block:hover .quality-icon_one
-    background: url('../images/tsicon1.svg') no-repeat center center
-.quality-block:hover .quality-icon_two
-    background: url('../images/tsicon2.svg') no-repeat center center
-.quality-block:hover .quality-icon_three
-    background: url('../images/tsicon3.svg') no-repeat center center
-.quality-block:hover .quality-icon_four
-    background: url('../images/tsicon4.svg') no-repeat center center
-.quality-block:hover .quality-icon_five
-    background: url('../images/tsicon5.svg') no-repeat center center
+    
+.quality-icon_one path:first-of-type
+    fill: #202939
+    transition: all 0.5s ease
+.quality-block:hover .quality-icon_one path:first-of-type
+    fill: #274BF1
+.quality-icon_two path:first-of-type
+    fill: #202939
+    transition: all 0.5s ease
+.quality-block:hover .quality-icon_two path:first-of-type
+    fill: #274BF1
+.quality-icon_three path:first-of-type
+    fill: #202939
+    transition: all 0.5s ease
+.quality-block:hover .quality-icon_three path:first-of-type
+    fill: #274BF1
+.quality-icon_four path:first-of-type
+    fill: #202939
+    transition: all 0.5s ease
+.quality-block:hover .quality-icon_four path:first-of-type
+    fill: #274BF1
+.quality-icon_five path:first-of-type
+    fill: #202939
+    transition: all 0.5s ease
+.quality-block:hover .quality-icon_five path:first-of-type
+    fill: #274BF1
 .fifth
     padding-top: 80px
     padding-bottom: 164px
+    @media screen and (max-width: 768px)
+        padding-top: 30px
+        padding-bottom: 50px
 h2.fifth-title
     text-align: left
     max-width: 500px
     margin-bottom: 65px
+    @media screen and (max-width: 768px)
+        margin-bottom: 40px
+    @media screen and (max-width: 576px)
+        margin-bottom: 30px
 .question
     &-block
         &__wrapper
@@ -299,3 +551,147 @@ h2.fifth-title
         &__text
             max-width: 943px
             font-size: 25px
+            @media screen and (max-width: 992px)
+                font-size: 20px
+            @media screen and (max-width: 768px)
+                max-width: 334px
+                font-size: 18px
+            @media screen and (max-width: 576px)
+                font-size: 16px
+        &__description
+            background: #274BF1
+            color: #ffffff
+            padding: 0
+            transition: all 0.5s ease
+            font-size: 25px
+            height: 0
+            overflow: hidden
+            transition: all 0.5s ease
+            &.active
+                height: 100%
+                padding: 26px 0
+                
+.plus
+    font-size: 24px
+    transform: rotate(0)
+    transition: all 0.5s ease
+    cursor: pointer
+    &.active
+        transform: rotate(45deg)
+.footer
+    padding-top: 62px
+    padding-bottom: 84px
+    background: #202939
+    &-row
+        display: flex
+        justify-content: space-between
+        @media screen and (max-width: 992px)
+            flex-wrap: wrap
+    &-logo
+        margin-bottom: 27px
+        background: url('../images/Logo.png') no-repeat center center / 144px 40px
+        width: 144px
+        height: 40px
+        display: block
+    &__block
+        &:first-of-type
+            margin-right: 170px
+            @media screen and (max-width: 992px)
+                margin-right: 50px
+        &:last-of-type
+            text-align: right
+        &:nth-child(3)
+            @media screen and (max-width: 992px)
+                display: none     
+        &_btn
+            display: inline-block
+            padding: 15px 22px
+            border: 1px solid #000000
+            border-radius: 100px
+            text-transform: uppercase
+            margin-bottom: 81px
+            color: #ffffff
+            transition: all 0.5s ease
+            &:hover
+                background: #274BF1
+                border: 1px solid #274BF1
+        &_text
+            max-width: 280px
+            font-size: 14px
+            color: #F8F8F8
+            margin-bottom: 27px
+        &_title
+            color: #ffffff
+            font-size: 22px
+            margin-bottom: 24px
+            @media screen and (max-width: 992px)
+                font-size: 20px
+        &_item
+            margin-bottom: 5px
+            margin-top: 5px
+        &_link
+            font-size: 16px
+            color: #ffffff
+    &-span__text
+        display: block
+        color: #B1B1B1
+        font-size: 12px
+        @media screen and (max-width: 992px)
+            padding-top: 35px
+            border-top: 1px solid #ffffff36
+            margin-top: 30px
+// styles of animation
+.just-block
+    position:relative
+    transition: all 0.5s ease       
+    &:first-of-type
+        transform: translateX(120%)
+        opacity: 0
+        &.active
+            transform: translateX(0)
+            opacity: 1
+    &:nth-child(2)
+        transform: translateX(-120%)
+        opacity: 0
+        &.active
+            transform: translateX(0)
+            opacity: 1
+    &:last-of-type
+        transform: translateX(120%)
+        opacity: 0
+        &.active
+            transform: translateX(0)
+            opacity: 1
+.argument__block
+    position:relative
+    transition: all 0.5s ease
+    &.active
+        transform:translateX(0)
+        opacity: 1
+    &:first-of-type
+        transform: translateX(-120%)
+        opacity: 0
+        &.active
+            transform: translateX(0)
+            opacity: 1
+    &:nth-child(2)
+        transform: translateX(120%)
+        opacity: 0
+        &.active
+            transform: translateX(20%)
+            opacity: 1
+    &:nth-child(3)
+        transform: translateX(-120%)
+        opacity: 0
+        &.active
+            transform: translateX(0)
+            opacity: 1
+    &:last-of-type
+        transform: translateX(120%)
+        opacity: 0
+        &.active
+            transform: translateX(20%)
+            opacity: 1 
+        
+
+        
