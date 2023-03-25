@@ -10,6 +10,135 @@
     <link rel="stylesheet" href="css/swiper.css">
 </head>
 <body>
+    <div class="popup">
+        <button class="popup-close"></button>
+        <div class="popup-content">
+            <h3 class="popup-content__title">
+                I am looking for
+            </h3>
+            <div class="popup-content__block">
+                <div class="popup-content__block_service service-one">
+                    <img src="images/popup1.png" alt="" class="service_img">
+                    <div class="popup-content__block_service_description">
+                        Interior design
+                    </div>
+                </div>
+                <div class="popup-content__block_service">
+                    <img src="images/popup2.png" alt="" class="service_img">
+                    <div class="popup-content__block_service_description">
+                        Kitchen
+                    </div>
+                </div>
+                <div class="popup-content__block_service">
+                    <img src="images/popup3.jpg" alt="" class="service_img">
+                    <div class="popup-content__block_service_description">
+                        Home renovation
+                    </div>
+                </div>
+                <div class="popup-content__block_service">
+                    <img src="images/popup4.jpg" alt="" class="service_img">
+                    <div class="popup-content__block_service_description">
+                        Furniture/fitouts
+                    </div>
+                </div>
+                <div class="popup-content__block_service">
+                    <img src="images/popup5.png" alt="" class="service_img">
+                    <div class="popup-content__block_service_description">
+                        Bathroom
+                    </div>
+                </div>
+                <div class="popup-content__block_service">
+                    <img src="images/popup6.jpg" alt="" class="service_img">
+                    <div class="popup-content__block_service_description">
+                        Landscaping
+                    </div>
+                </div>
+            </div>
+            <form action="" method="post">
+                <div class="form-wrapper">
+                    <label for="project">Project start date</label>
+                    <input id="project" name="text" type="text">
+                </div>
+                <div class="form-wrapper">
+                    <label for="community">Community</label>
+                    <input id="community" name="text" type="text">
+                </div>
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="text" placeholder="marcmourad_88@hotmail.com">
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="text" placeholder="+971">
+                <input type="submit" class="form-btn" value="Submit now">
+            </form>
+        </div>
+    </div>
+    <div class="mobile-popup">
+        <div class="mobile-close mobile-popup-close">
+            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.87646 14.4069L1.27291 8.07667L8.87646 1.74646" stroke="#202939" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <a href="#" class="mobile-menu__logo">
+
+        </a>
+        <div class="mobile-popup-content">
+            <h3 class="mobile-popup-content__title">
+                I am looking for
+            </h3>
+            <div class="mobile-popup-content__block">
+                <div class="mobile-popup-content__block_service service-one">
+                    <img src="images/popup1.png" alt="" class="mobile-service_img">
+                    <div class="mobile-popup-content__block_service_description">
+                        Interior design
+                    </div>
+                </div>
+                <div class="mobile-popup-content__block_service">
+                    <img src="images/popup2.png" alt="" class="mobile-service_img">
+                    <div class="mobile-popup-content__block_service_description">
+                        Kitchen
+                    </div>
+                </div>
+                <div class="mobile-popup-content__block_service">
+                    <img src="images/popup3.jpg" alt="" class="mobile-service_img">
+                    <div class="mobile-popup-content__block_service_description">
+                        Home renovation
+                    </div>
+                </div>
+                <div class="mobile-popup-content__block_service">
+                    <img src="images/popup4.jpg" alt="" class="mobile-service_img">
+                    <div class="mobile-popup-content__block_service_description">
+                        Furniture/fitouts
+                    </div>
+                </div>
+                <div class="mobile-popup-content__block_service">
+                    <img src="images/popup5.png" alt="" class="mobile-service_img">
+                    <div class="mobile-popup-content__block_service_description">
+                        Bathroom
+                    </div>
+                </div>
+                <div class="mobile-popup-content__block_service">
+                    <img src="images/popup6.jpg" alt="" class="mobile-service_img">
+                    <div class="mobile-popup-content__block_service_description">
+                        Landscaping
+                    </div>
+                </div>
+            </div>
+            <form action="" method="post">
+                <div class="form-wrapper">
+                    <label for="project">Looking to start</label>
+                    <input id="project" name="text" type="text">
+                </div>
+                <div class="form-wrapper">
+                    <label for="community">Community</label>
+                    <input id="community" name="text" type="text">
+                </div>
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="text" placeholder="marcmourad_88@hotmail.com">
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="text" placeholder="+971">
+                <input type="submit" class="form-btn" value="Submit now">
+            </form>
+        </div>
+    </div>
     <header class="header" id="header">
         <div class="nav">
             <div class="container">
@@ -31,7 +160,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="menu__button form mobile-form">
+                    <div class="menu__button form">
                         Get started
                     </div>
                 </div>
@@ -63,7 +192,7 @@
                         <a href="#">FAQs</a>
                     </li>
                 </ul>
-                <button class="mobile-menu__btn">
+                <button class="mobile-menu__btn mobile-form">
                     Get started
                 </button>
             </div>
@@ -76,9 +205,9 @@
                     <p class="content__description">
                         Start your home renovation journey the smart way
                     </p>
-                    <a class="content__btn">
+                    <button class="content__btn form mobile-form">
                         Start your project
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -637,9 +766,9 @@
                     <p class="footer__block_text">
                         Start your home renovation journey the smart way
                     </p>
-                    <a href="#" class="footer__block_btn">
+                    <button class="footer__block_btn form mobile-form">
                         Get started
-                    </a>
+                    </button>
                 </div>
                 <div class="footer__block">
                     <h4 class="footer__block_title">Quick Links</h4>

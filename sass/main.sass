@@ -5,7 +5,10 @@ body
     padding: 0
     font-family: 'Roobert', sans-serif
     font-size: 18px
-    overflowX: hidden
+    overflowx: hidden
+    &.nobody
+        overflow-y: hidden
+        height: 100vh
 h1, h2, h3, h4, h5, h6
     margin: 0
     padding: 0
@@ -156,6 +159,8 @@ p.section-description
         border-radius: 100px
         color: #202939
         transition: all 0.5s ease
+        background: none
+        font-size: 20px
         @media screen and (max-width: 576px)
             padding: 15px 25px
             font-size: 17px
@@ -610,6 +615,8 @@ h2.fifth-title
             border-radius: 100px
             text-transform: uppercase
             margin-bottom: 81px
+            font-size: 17px
+            background: none
             color: #ffffff
             transition: all 0.5s ease
             &:hover
@@ -701,7 +708,7 @@ h2.fifth-title
     .header
         position: relative
 .mobile
-    overflowX: hidden
+    overflowx: hidden
     &-close
         cursor: pointer
     &-menu
@@ -711,7 +718,7 @@ h2.fifth-title
         width: 100vw
         height: 100vh
         background: #FEFEFF
-        padding: 15px 35px
+        padding: 30px 35px
         transform: translateX(-100%)
         transition: all 0.5s ease
         &.active
@@ -737,6 +744,180 @@ h2.fifth-title
             background: #274BF1
             font-size: 23px
             color: #FFFFFF
+// form order
+.popup
+    position: fixed
+    width: 753px
+    height: 850px
+    background: #FEFEFF
+    bottom: 150%
+    right: 50%
+    transform: translate(50%, 50%)
+    border-radius: 10px
+    padding: 60px 60px
+    transition: all 0.5s ease
+    @media screen and (max-width: 768px)
+        display: none
+    &.active
+        bottom: 50%
+    &-close
+        position: absolute
+        top: 3%
+        right: 3%
+        border: none
+        width: 36px
+        height:36px
+        background: url('../images/closep.svg') no-repeat center center / 36px
+    &-content
+        &__title
+            font-size: 25px
+            text-align: center
+            margin-bottom: 30px
+        &__block
+            display: grid
+            grid-template: repeat(2, auto)/ repeat(3, auto)
+            grid-gap: 13px 43px
+            margin-bottom: 20px
+            &_service
+                width: 182px
+                height: 173px
+                overflow: hidden
+                position: relative
+                border-radius: 10px
+                cursor: pointer
+                &_description
+                    background: #000000
+                    color: #ffffff
+                    font-size: 18px
+                    position: absolute
+                    bottom: 0
+                    width: 100%
+                    padding: 10px 14px
+.service
+    &_img
+        position: absolute
+        width: 235px
+        height: 224px
+        object-fit: cover
+        transition: all 0.5s ease
+form
+    & label
+        font-size: 18px
+    & input
+        font-size: 17px
+        border-radius: 7px
+        padding: 9px 16px
+        border: 1px solid #DBDBDB
+input#email
+    margin-bottom: 20px
+input#phone
+    margin-bottom: 27px
+input#project, input#community
+    width: 298px
+    padding: 9px 16px
+input#email, input#phone
+    border: none
+    background: #F8F8F8
+    width: 100%
+    padding: 9px 16px
+.form-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 12px
+input.form-btn
+    border-radius: 9px
+    padding: 17px 116px
+    background: #274BF1
+    color: #FFFFFF
+    font-size: 19px
+    display: block
+    margin: 0 auto
+// mobile popup
+.mobile-popup
+    display: none
+    position: absolute
+    width: 100vw
+    height: 100vh
+    overflow-y: scroll
+    background: #FEFEFF
+    z-index: 51
+    transform: translateX(-100%)
+    padding: 41px 22px
+    transition: all 0.5s ease
+    @media screen and (max-width: 768px)
+        display: block
+        
+    &.active
+        transform: translateX(0)
+    &-content
+        &__title
+            display: block
+            font-size: 23px
+            text-align: center
+            margin-bottom: 30px
+            margin-top: 20px
+        &__block
+            display: grid
+            grid-template: repeat(3, auto)/ repeat(2, auto)
+            grid-gap: 8px 24px
+            margin-bottom: 20px
+            &_service
+                width: 153px
+                height: 150px
+                overflow: hidden
+                position: relative
+                border-radius: 10px
+                cursor: pointer
+                &_description
+                    background: #000000
+                    color: #ffffff
+                    font-size: 18px
+                    position: absolute
+                    bottom: 0
+                    width: 100%
+                    padding: 10px 14px
+.mobile-service
+    &_img
+        position: absolute
+        width: 198px
+        height: 189px
+        object-fit: cover
+        transition: all 0.5s ease
+.mobile-popup form
+    & label
+        font-size: 17px
+    & input
+        font-size: 16px
+        border-radius: 7px
+        padding: 9px 16px
+        border: 1px solid #DBDBDB
+
+.mobile-popup input#email
+    margin-bottom: 20px
+.mobile-popup input#phone
+    margin-bottom: 27px
+.mobile-popup input#project, input#community
+    width: 171px
+    padding: 9px 16px
+.mobile-popup input#email, input#phone
+    border: none
+    background: #F8F8F8
+    width: 100%
+    padding: 9px 16px
+.mobile-popup .form-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 12px
+.mobile-popup input.form-btn
+    border-radius: 9px
+    padding: 17px 116px
+    background: #274BF1
+    color: #FFFFFF
+    font-size: 19px
+    display: block
+    margin: 0 auto
 
         
 

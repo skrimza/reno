@@ -98,5 +98,31 @@ $(function () {
     });
     close.on('click', function () {
         menu.removeClass('active');
+    });
+});
+// form
+$(function () {
+    const form = $('.form');
+    const popup = $('.popup');
+    const closePop = $('.popup-close');
+    form.on('click', function () {
+        popup.addClass('active');
+    });
+    closePop.on('click', function () {
+        popup.removeClass('active');
+    })
+});
+// mobile-form
+$(function () {
+    const mobileForm = $('.mobile-form');
+    const mPopup = $('.mobile-popup');
+    const mClosePop = $('.mobile-popup-close');
+    mobileForm.on('click', function () {
+        mPopup.addClass('active');
+        $('body').addClass('nobody');
+    });
+    mClosePop.on('click', function () {
+        mPopup.removeClass('active');
+        $('body').removeClass('nobody');
     })
 });
