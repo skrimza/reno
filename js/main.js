@@ -87,3 +87,16 @@ if (animItems.length > 0) {
     }
     animOnScroll();
 }
+
+// mobile-menu
+$(function () {
+    const button = $('.mobile-btn');
+    const menu = $('.mobile-menu');
+    const close = $('.mobile-close');
+    button.on('click', function () {
+        menu.addClass('active');
+    });
+    close.on('click', function () {
+        menu.removeClass('active');
+    })
+});

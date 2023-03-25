@@ -680,6 +680,8 @@ h2.fifth-title
         &.active
             transform: translateX(20%)
             opacity: 1
+            @media screen and (max-width: 992px)
+                transform: translateX(0)
     &:nth-child(3)
         transform: translateX(-120%)
         opacity: 0
@@ -691,7 +693,51 @@ h2.fifth-title
         opacity: 0
         &.active
             transform: translateX(20%)
-            opacity: 1 
+            opacity: 1
+            @media screen and (max-width: 992px)
+                transform: translateX(0)
+
+// mobile-menu
+    .header
+        position: relative
+.mobile
+    overflowX: hidden
+    &-close
+        cursor: pointer
+    &-menu
+        position: fixed
+        z-index: 50
+        top: 0
+        width: 100vw
+        height: 100vh
+        background: #FEFEFF
+        padding: 15px 35px
+        transform: translateX(-100%)
+        transition: all 0.5s ease
+        &.active
+            transform: translateX(0)
+        &__logo
+            display: block
+            background: url('../images/mlogo.png') no-repeat center center / 119px
+            width: 119px
+            height: 32px
+            margin-top: 15px
+        &__list
+            padding-left: 30px
+            margin-top: 86px
+            & li a
+                font-size: 30px
+                color: #202939
+            & li
+                margin-bottom: 72px
+        &__btn
+            padding: 24px 42px
+            border-radius: 100px
+            border: none
+            background: #274BF1
+            font-size: 23px
+            color: #FFFFFF
+
         
 
         
