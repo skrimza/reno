@@ -832,6 +832,8 @@ input#email, input#phone
     background: #F8F8F8
     width: 100%
     padding: 9px 16px
+input._error
+    box-shadow: 0 0 15px #ee2222
 .form-wrapper
     display: flex
     justify-content: space-between
@@ -845,6 +847,12 @@ input.form-btn
     font-size: 19px
     display: block
     margin: 0 auto
+input[type=checkbox]
+    position: absolute
+    width: 100%
+    height: 100%
+    opacity: 0.05
+    z-index: 2
 // mobile popup
 .mobile-popup
     display: none
@@ -947,6 +955,7 @@ input.form-btn
     right: 50%
     transform: translate(50%, 50%)
     visibility: hidden
+    transition: all 0.5s ease
     &.active
         visibility: visible
     &__text

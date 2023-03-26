@@ -1469,6 +1469,11 @@ input#email, input#phone {
   padding: 9px 16px;
 }
 
+input._error {
+  -webkit-box-shadow: 0 0 15px #ee2222;
+          box-shadow: 0 0 15px #ee2222;
+}
+
 .form-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1490,6 +1495,14 @@ input.form-btn {
   font-size: 19px;
   display: block;
   margin: 0 auto;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  z-index: 2;
 }
 
 .mobile-popup {
@@ -1637,6 +1650,9 @@ input.form-btn {
       -ms-transform: translate(50%, 50%);
           transform: translate(50%, 50%);
   visibility: hidden;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .form_messages.active {
   visibility: visible;

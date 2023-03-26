@@ -138,37 +138,10 @@ $(function () {
 });
 $(function () {
     $('.mobile-popup-content__block_service').on('click', function () {
-        for (let i = 0; i < $('.mobile-popup-content__block_service').length; i++) {
+        for (let q = 0; q < $('.mobile-popup-content__block_service').length; q++) {
             $('.mobile-popup-content__block_service').removeClass('active');
             $(this).addClass('active');
         }
     })
 });
-
-$(document).ready(function () {
-    $("#form-btn").click(
-        function () {
-            sendAjaxForm('result_form', 'ajax_form', 'action_ajax_form.php');
-            return false;
-        }
-    );
-});
-
-function sendAjaxForm(form_messages, ajax_form, url) {
-    $.ajax({
-        url: action_ajax_form.php, //url страницы (action_ajax_form.php)
-        type: "POST", //метод отправки
-        dataType: "html", //формат данных
-        data: $("#" + ajax_form).serialize(),  // Сеарилизуем объект
-        success: function (response) { //Данные отправлены успешно
-            result = $.parseJSON(response);
-            $('#form_messages').addClass('active');
-            mPopup.removeClass('active');
-            popup.removeClass('active');
-        },
-        error: function (response) { // Данные не отправлены
-            return;
-        }
-    });
-}
 
