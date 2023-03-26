@@ -1,0 +1,15 @@
+div.thumbnails.image_picker_selector {
+  display: grid;
+  grid-template: repeat(2, auto)/repeat(3, auto);
+  grid-gap: 13px 43px;
+  margin-bottom: 20px; }
+  div.thumbnails.image_picker_selector div.thumbnail {
+    padding: 3px;
+    border: 1px solid #dddddd;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; }
+    div.thumbnails.image_picker_selector div.thumbnail img {
+      -webkit-user-drag: none; }
+  div.thumbnails.image_picker_selector div.thumbnail.selected {
+    background: #0088cc; }
