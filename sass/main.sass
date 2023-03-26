@@ -5,7 +5,7 @@ body
     padding: 0
     font-family: 'Roobert', sans-serif
     font-size: 18px
-    overflowx: hidden
+    overflow-x: hidden
     &.nobody
         overflow-y: hidden
         height: 100vh
@@ -572,6 +572,13 @@ h2.fifth-title
             height: 0
             overflow: hidden
             transition: all 0.5s ease
+            @media screen and (max-width: 992px)
+                font-size: 20px
+            @media screen and (max-width: 768px)
+                max-width: 334px
+                font-size: 18px
+            @media screen and (max-width: 576px)
+                font-size: 16px
             &.active
                 height: 100%
                 padding: 26px 0
@@ -752,14 +759,17 @@ h2.fifth-title
     background: #FEFEFF
     bottom: 150%
     right: 50%
-    transform: translate(50%, 50%)
+    transform: translate(50%, 0)
+    opacity: 0
     border-radius: 10px
     padding: 60px 60px
     transition: all 0.5s ease
     @media screen and (max-width: 768px)
         display: none
     &.active
+        opacity: 1
         bottom: 50%
+        transform: translate(50%, 50%)
     &-close
         position: absolute
         top: 3%
@@ -785,6 +795,8 @@ h2.fifth-title
                 position: relative
                 border-radius: 10px
                 cursor: pointer
+                &.active
+                    border: 3px solid #274BF1
                 &_description
                     background: #000000
                     color: #ffffff
@@ -870,6 +882,8 @@ input.form-btn
                 position: relative
                 border-radius: 10px
                 cursor: pointer
+                &.active
+                    border: 3px solid #274BF1
                 &_description
                     background: #000000
                     color: #ffffff
@@ -919,7 +933,39 @@ input.form-btn
     font-size: 19px
     display: block
     margin: 0 auto
-
+.form
+    cursor: pointer
+.form_messages
+    background: #FEFEFF
+    display: block
+    border-radius: 10px
+    max-width: 460px
+    width: 100%
+    position: absolute
+    padding: 33px 60px
+    bottom: 50%
+    right: 50%
+    transform: translate(50%, 50%)
+    visibility: hidden
+    &.active
+        visibility: visible
+    &__text
+        max-width: 284px
+        text-align: center
+        margin: 0 auto
+        font-size: 28px
+        margin-bottom: 24px
+    &__img
+        display: block
+        margin: 0 auto 24px
+    &__btn
+        background: #274BF1
+        font-size: 15px
+        color: #FFFFFF
+        border-radius: 7px
+        border: none
+        padding: 14px 14px
+        width: 100%
         
 
         

@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/swiper.css">
 </head>
 <body>
+    <div id="form_messages" class="form_messages">
+        <img src="images/checkmark.png" alt="checkmark" class="form_messages__img">
+        <p class="form_messages__text">Thank you!we will get back to you once we are live</p>
+        <button class="form_messages__btn">Home</button>
+    </div>
     <div class="popup">
         <button class="popup-close"></button>
         <div class="popup-content">
@@ -17,11 +22,6 @@
                 I am looking for
             </h3>
             <div class="popup-content__block">
-                <select class="image-picker show-html">
-                    <option data-img-src="http://placekitten.com/300/200" value="1">Cute Kitten 1</option>
-                    <option data-img-src="http://placekitten.com/150/200" value="2">Cute Kitten 2</option>
-                    <option data-img-src="http://placekitten.com/400/200" value="3">Cute Kitten 3</option>
-                </select>
                 <div class="popup-content__block_service service-one">
                     <img src="images/popup1.png" alt="" class="service_img">
                     <div class="popup-content__block_service_description">
@@ -59,20 +59,20 @@
                     </div>
                 </div>
             </div>
-            <form action="" method="post">
+            <form id="ajax_form" action="#" method="post">
                 <div class="form-wrapper">
                     <label for="project">Project start date</label>
-                    <input id="project" name="text" type="text">
+                    <input id="project" name="text" type="text" required>
                 </div>
                 <div class="form-wrapper">
                     <label for="community">Community</label>
-                    <input id="community" name="text" type="text">
+                    <input id="community" name="text" type="text" required>
                 </div>
                 <label for="email">Email address</label>
-                <input id="email" name="email" type="text" placeholder="marcmourad_88@hotmail.com">
+                <input id="email" name="email" type="text" placeholder="marcmourad_88@hotmail.com" required>
                 <label for="phone">Phone number</label>
-                <input id="phone" name="phone" type="text" placeholder="+971">
-                <input type="submit" class="form-btn" value="Submit now">
+                <input id="phone" name="phone" type="text" placeholder="+971" required>
+                <input type="submit" id="form-btn" class="form-btn" value="Submit now">
             </form>
         </div>
     </div>
@@ -127,20 +127,20 @@
                     </div>
                 </div>
             </div>
-            <form action="" method="post">
+            <form id="ajax_form" action="" method="post">
                 <div class="form-wrapper">
                     <label for="project">Looking to start</label>
-                    <input id="project" name="text" type="text">
+                    <input id="project" name="text" type="text" required required>
                 </div>
                 <div class="form-wrapper">
                     <label for="community">Community</label>
-                    <input id="community" name="text" type="text">
+                    <input id="community" name="text" type="text" required required>
                 </div>
                 <label for="email">Email address</label>
-                <input id="email" name="email" type="text" placeholder="marcmourad_88@hotmail.com">
+                <input id="email" name="email" type="text" placeholder="marcmourad_88@hotmail.com" required required>
                 <label for="phone">Phone number</label>
-                <input id="phone" name="phone" type="text" placeholder="+971">
-                <input type="submit" class="form-btn" value="Submit now">
+                <input id="phone" name="phone" type="text" placeholder="+971" required required>
+                <input type="submit" id="form-btn"class="form-btn" value="Submit now">
             </form>
         </div>
     </div>
@@ -707,56 +707,56 @@
             <div class="question">
                 <div class="question-block">
                     <div class="question-block__wrapper">
-                        <p class="question-block__text">
+                        <p class="question-block__text text-one">
                         Can I renovate a house on someone's behalf if I am not the owner ?
                     </p>
                     <span class="plus">+</span>
                     </div>
-                    <p class="question-block__description">
+                    <p class="question-block__description description-one">
                         Can I renovate a house on someone's behalf if I am not the owner ?
                     </p>
                 </div>
                 <div class="question-block">
                     <div class="question-block__wrapper">
-                        <p class="question-block__text">
+                        <p class="question-block__text text-two">
                             After I start working with a contractor, should I not like his work, can I cancel the project at any given time ?
                         </p>
                         <span class="plus">+</span>
                     </div>
-                    <p class="question-block__description">
+                    <p class="question-block__description description-two">
                         Can I renovate a house on someone's behalf if I am not the owner ?
                     </p>
                 </div>
                 <div class="question-block">
                     <div class="question-block__wrapper">
-                        <p class="question-block__text">
+                        <p class="question-block__text text-three">
                             How do you guarantee that the contractor will finish each milestone on time ?
                         </p>
                         <span class="plus">+</span>
                     </div>
-                    <p class="question-block__description">
+                    <p class="question-block__description description-three">
                         Can I renovate a house on someone's behalf if I am not the owner ?
                     </p>
                 </div>
                 <div class="question-block">
                     <div class="question-block__wrapper">
-                        <p class="question-block__text">
+                        <p class="question-block__text text-four">
                             How do you evaluate if the contractor delivered the work up to the standard promised in the proposal in the case that I am not happy with it ?
                         </p>
                         <span class="plus">+</span>
                     </div>
-                    <p class="question-block__description">
+                    <p class="question-block__description description-four">
                         Can I renovate a house on someone's behalf if I am not the owner ?
                     </p>
                 </div>
                 <div class="question-block">
                     <div class="question-block__wrapper">
-                        <p class="question-block__text">
+                        <p class="question-block__text text-five">
                             Does RENO the company provide contracting services, should I want to use Reno as my contractor ?
                         </p>
                         <span class="plus">+</span>
                     </div>
-                    <p class="question-block__description">
+                    <p class="question-block__description description-five">
                         Can I renovate a house on someone's behalf if I am not the owner ?
                     </p>
                 </div>

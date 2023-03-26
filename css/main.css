@@ -8,7 +8,7 @@ body {
   padding: 0;
   font-family: "Roobert", sans-serif;
   font-size: 18px;
-  overflowx: hidden;
+  overflow-x: hidden;
 }
 body.nobody {
   overflow-y: hidden;
@@ -1058,6 +1058,22 @@ h2.fifth-title {
   overflow: hidden;
   transition: all 0.5s ease;
 }
+@media screen and (max-width: 992px) {
+  .question-block__description {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .question-block__description {
+    max-width: 334px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .question-block__description {
+    font-size: 16px;
+  }
+}
 .question-block__description.active {
   height: 100%;
   padding: 26px 0;
@@ -1349,9 +1365,10 @@ h2.fifth-title {
   background: #FEFEFF;
   bottom: 150%;
   right: 50%;
-  -webkit-transform: translate(50%, 50%);
-      -ms-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  -webkit-transform: translate(50%, 0);
+      -ms-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+  opacity: 0;
   border-radius: 10px;
   padding: 60px 60px;
   -webkit-transition: all 0.5s ease;
@@ -1364,7 +1381,11 @@ h2.fifth-title {
   }
 }
 .popup.active {
+  opacity: 1;
   bottom: 50%;
+  -webkit-transform: translate(50%, 50%);
+      -ms-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
 }
 .popup-close {
   position: absolute;
@@ -1393,6 +1414,9 @@ h2.fifth-title {
   position: relative;
   border-radius: 10px;
   cursor: pointer;
+}
+.popup-content__block_service.active {
+  border: 3px solid #274BF1;
 }
 .popup-content__block_service_description {
   background: #000000;
@@ -1518,6 +1542,9 @@ input.form-btn {
   border-radius: 10px;
   cursor: pointer;
 }
+.mobile-popup-content__block_service.active {
+  border: 3px solid #274BF1;
+}
 .mobile-popup-content__block_service_description {
   background: #000000;
   color: #ffffff;
@@ -1590,4 +1617,47 @@ input.form-btn {
   font-size: 19px;
   display: block;
   margin: 0 auto;
+}
+
+.form {
+  cursor: pointer;
+}
+
+.form_messages {
+  background: #FEFEFF;
+  display: block;
+  border-radius: 10px;
+  max-width: 460px;
+  width: 100%;
+  position: absolute;
+  padding: 33px 60px;
+  bottom: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+      -ms-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  visibility: hidden;
+}
+.form_messages.active {
+  visibility: visible;
+}
+.form_messages__text {
+  max-width: 284px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+.form_messages__img {
+  display: block;
+  margin: 0 auto 24px;
+}
+.form_messages__btn {
+  background: #274BF1;
+  font-size: 15px;
+  color: #FFFFFF;
+  border-radius: 7px;
+  border: none;
+  padding: 14px 14px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
