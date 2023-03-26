@@ -93,40 +93,42 @@ $(function () {
     const button = $('.mobile-btn');
     const menu = $('.mobile-menu');
     const close = $('.mobile-close');
+    const form = $('.form');
+    const popup = $('.popup');
+    const closePop = $('.popup-close');
     button.on('click', function () {
         menu.addClass('active');
     });
     close.on('click', function () {
         menu.removeClass('active');
     });
-});
-// form
-$(function () {
-    const form = $('.form');
-    const popup = $('.popup');
-    const closePop = $('.popup-close');
     form.on('click', function () {
         popup.addClass('active');
     });
     closePop.on('click', function () {
         popup.removeClass('active');
         $('body').removeClass('nobody');
-    })
-});
-// mobile-form
-$(function () {
-    const mobileForm = $('.mobile-form');
-    const mPopup = $('.mobile-popup');
-    const mClosePop = $('.mobile-popup-close');
-    mobileForm.on('click', function () {
-        mPopup.addClass('active');
-        $('body').addClass('nobody');
     });
-    mClosePop.on('click', function () {
-        mPopup.removeClass('active');
-        $('body').removeClass('nobody');
-    })
+    if (popup.hasClass('active')) {
+        menu.removeClass('active');
+    };
 });
+// form
+
+// // mobile-form
+// $(function () {
+//     const mobileForm = $('.mobile-form');
+//     const mPopup = $('.mobile-popup');
+//     const mClosePop = $('.mobile-popup-close');
+//     mobileForm.on('click', function () {
+//         mPopup.addClass('active');
+//         $('body').addClass('nobody');
+//     });
+//     mClosePop.on('click', function () {
+//         mPopup.removeClass('active');
+//         $('body').removeClass('nobody');
+//     })
+// });
 
 $(function () {
     $('.popup-content__block_service').on('click', function () {

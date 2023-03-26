@@ -765,7 +765,22 @@ h2.fifth-title
     padding: 60px 60px
     transition: all 0.5s ease
     @media screen and (max-width: 768px)
-        display: none
+        // display: none
+        position: fixed
+        width: 100vw
+        height: 100vh
+        overflow-y: scroll
+        background: #FEFEFF
+        z-index: 51
+        bottom: 0 !important
+        top: 0
+        transform: translateX(-100%)
+        padding: 41px 22px
+        transition: all 0.5s ease
+        &.active
+            transform: translateX(0) !important
+            bottom: 0 !important
+            right: 0 !important
     &.active
         opacity: 1
         bottom: 50%
@@ -783,11 +798,23 @@ h2.fifth-title
             font-size: 25px
             text-align: center
             margin-bottom: 30px
+            @media screen and (max-width: 768px)
+                display: block
+                font-size: 23px
+                text-align: center
+                margin-bottom: 30px
+                margin-top: 20px
         &__block
             display: grid
             grid-template: repeat(2, auto)/ repeat(3, auto)
             grid-gap: 13px 43px
             margin-bottom: 20px
+            @media screen and (max-width: 768px)
+                display: grid
+                grid-template: repeat(3, auto)/ repeat(2, auto)
+                grid-gap: 8px 24px
+                margin-bottom: 20px
+                justify-content: center
             &_service
                 width: 182px
                 height: 173px
@@ -795,6 +822,15 @@ h2.fifth-title
                 position: relative
                 border-radius: 10px
                 cursor: pointer
+                @media screen and (max-width: 768px)
+                    width: 153px
+                    height: 150px
+                    overflow: hidden
+                    position: relative
+                    border-radius: 10px
+                    cursor: pointer
+                    &.active
+                        border: 3px solid #274BF1
                 &.active
                     border: 3px solid #274BF1
                 &_description
@@ -805,6 +841,14 @@ h2.fifth-title
                     bottom: 0
                     width: 100%
                     padding: 10px 14px
+                    @media screen and (max-width: 768px)
+                        background: #000000
+                        color: #ffffff
+                        font-size: 18px
+                        position: absolute
+                        bottom: 0
+                        width: 100%
+                        padding: 10px 14px
 .service
     &_img
         position: absolute
@@ -812,26 +856,51 @@ h2.fifth-title
         height: 224px
         object-fit: cover
         transition: all 0.5s ease
+        @media screen and (max-width: 768px)
+            position: absolute
+            width: 198px
+            height: 189px
+            object-fit: cover
+            transition: all 0.5s ease
 form
     & label
         font-size: 18px
+        @media screen and (max-width: 768px)
+            font-size: 17px
     & input
         font-size: 17px
         border-radius: 7px
         padding: 9px 16px
         border: 1px solid #DBDBDB
+        @media screen and (max-width: 768px)
+            font-size: 16px
+            border-radius: 7px
+            padding: 9px 16px
+            border: 1px solid #DBDBDB
 input#email
     margin-bottom: 20px
+    @media screen and (max-width: 768px)
+        margin-bottom: 20px
 input#phone
     margin-bottom: 27px
+    @media screen and (max-width: 768px)
+        margin-bottom: 27px
 input#project, input#community
     width: 298px
     padding: 9px 16px
+    @media screen and (max-width: 768px)
+        width: 171px
+        padding: 9px 16px
 input#email, input#phone
     border: none
     background: #F8F8F8
     width: 100%
     padding: 9px 16px
+    @media screen and (max-width: 768px)
+        border: none
+        background: #F8F8F8
+        width: 100%
+        padding: 9px 16px
 input._error
     box-shadow: 0 0 15px #ee2222
 .form-wrapper
@@ -839,6 +908,11 @@ input._error
     justify-content: space-between
     align-items: center
     margin-bottom: 12px
+    @media screen and (max-width: 768px)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 12px
 input.form-btn
     border-radius: 9px
     padding: 17px 116px
@@ -847,103 +921,24 @@ input.form-btn
     font-size: 19px
     display: block
     margin: 0 auto
+    @media screen and (max-width: 768px)
+        border-radius: 9px
+        padding: 17px 116px
+        background: #274BF1
+        color: #FFFFFF
+        font-size: 19px
+        display: block
+        margin: 0 auto
 input[type=checkbox]
     position: absolute
     width: 100%
     height: 100%
     opacity: 0.05
     z-index: 2
-// mobile popup
-.mobile-popup
-    display: none
-    position: fixed
-    width: 100vw
-    height: 100vh
-    overflow-y: scroll
-    background: #FEFEFF
-    z-index: 51
-    transform: translateX(-100%)
-    padding: 41px 22px
-    transition: all 0.5s ease
-    @media screen and (max-width: 768px)
-        display: block
-        
-    &.active
-        transform: translateX(0)
-    &-content
-        &__title
-            display: block
-            font-size: 23px
-            text-align: center
-            margin-bottom: 30px
-            margin-top: 20px
-        &__block
-            display: grid
-            grid-template: repeat(3, auto)/ repeat(2, auto)
-            grid-gap: 8px 24px
-            margin-bottom: 20px
-            justify-content: center
-            &_service
-                width: 153px
-                height: 150px
-                overflow: hidden
-                position: relative
-                border-radius: 10px
-                cursor: pointer
-                &.active
-                    border: 3px solid #274BF1
-                &_description
-                    background: #000000
-                    color: #ffffff
-                    font-size: 18px
-                    position: absolute
-                    bottom: 0
-                    width: 100%
-                    padding: 10px 14px
-.mobile-service
-    &_img
-        position: absolute
-        width: 198px
-        height: 189px
-        object-fit: cover
-        transition: all 0.5s ease
-.mobile-popup form
-    & label
-        font-size: 17px
-    & input
-        font-size: 16px
-        border-radius: 7px
-        padding: 9px 16px
-        border: 1px solid #DBDBDB
-
-.mobile-popup input#email
-    margin-bottom: 20px
-.mobile-popup input#phone
-    margin-bottom: 27px
-.mobile-popup input#project, input#community
-    width: 171px
-    padding: 9px 16px
-.mobile-popup input#email, input#phone
-    border: none
-    background: #F8F8F8
-    width: 100%
-    padding: 9px 16px
-.mobile-popup .form-wrapper
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin-bottom: 12px
-.mobile-popup input.form-btn
-    border-radius: 9px
-    padding: 17px 116px
-    background: #274BF1
-    color: #FFFFFF
-    font-size: 19px
-    display: block
-    margin: 0 auto
 .form
     cursor: pointer
-    // form-message
+
+// form-message
 .form_messages
     background: #FEFEFF
     display: block
@@ -976,6 +971,8 @@ input[type=checkbox]
         border: none
         padding: 14px 14px
         width: 100%
+        cursor: pointer
+
         
 
         
